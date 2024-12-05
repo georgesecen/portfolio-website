@@ -2,7 +2,7 @@
     display: flex;
     width: fit-content;
     background: hsla(0, 0%, 90%, .5);
-    padding: 2px;
+    padding: 3px;
     border-radius: 30px;
     position: relative;
     font-family: sans-serif;
@@ -23,4 +23,22 @@
 .navbar > a:hover{
     color: black;
     background: rgba(0, 0, 0, .025);
+}
+
+.navbar > .active{
+    color: black;
+}
+
+/* So when hovering over active item it stays white background color does not change */
+.navbar > .active:hover{
+    background-color: transparent;
+}
+
+.slider{
+    z-index: 0;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    transition-property: width, left;
+    transition-duration: 0.3s;
 }
