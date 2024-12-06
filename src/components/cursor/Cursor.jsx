@@ -20,10 +20,21 @@ const Cursor = () => {
     letters.forEach((item, index) => {
       item.style.transform = "rotate(" + index * rotation + "deg)"
     })
+
+    document.addEventListener("mousemove", function (e) {
+      // Get the center position of the custom cursor
+      const customCursor = document.getElementById("cursors")
+      const centerWidth = customCursor.offsetWidth / 2
+      const centerHeight = customCursor.offsetHeight / 2
+
+      // Position the center of the custom cursor at the position of the cursor
+      customCursor.style.transform = "translateY(" + (e.clientY - centerHeight) + "px)"
+      customCursor.style.transform += "translateX(" + (e.clientX - centerWidth) + "px)"
+    })
   }, [])
 
   return (
-    <div className="custom-cursor">
+    <div className="custom-cursor" id="cursors">
       <p>. CHECK OUT PROJECT . CHECK OUT PROJECT </p>
     </div>
   )
