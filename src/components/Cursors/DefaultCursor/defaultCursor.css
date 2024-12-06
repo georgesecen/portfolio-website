@@ -1,4 +1,5 @@
 .default-cursor{
+    cursor: none;
     top: 0;
     left: 0;
     position: fixed;
@@ -6,6 +7,12 @@
     height: fit-content;
     z-index: 2;
     pointer-events: none;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.default-cursor.show{
+    opacity: 0;
 }
 
 .default-cursor > div{
