@@ -1,0 +1,15 @@
+.custom-cursor{
+    position: relative;
+    border-radius: 50%;
+}
+
+.custom-cursor > p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.custom-cursor > p > span{
+    position: absolute;
+    /* Radius of the circular text */
+    transform-origin: 0px 100px; 
+}
