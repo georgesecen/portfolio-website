@@ -1,0 +1,23 @@
+.default-cursor{
+    cursor: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    pointer-events: none;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.default-cursor.show{
+    opacity: 0;
+}
+
+.default-cursor > div{
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 50%;
+    background-color: black;
+}
