@@ -6,7 +6,14 @@
     height: fit-content;
     z-index: 2;
     pointer-events: none;
+    transition-property: scale;
+    transition-duration: 3s;
 }
+
+.unshow{
+    scale: 2;
+}
+
 
 .custom-cursor > img{
     position: absolute;

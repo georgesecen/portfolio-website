@@ -1,8 +1,8 @@
 import { React, useEffect } from "react"
-import "./cursor.css"
-import githubLogo from "../../assets/images/github-logo.svg"
+import "./customCursor.css"
+import githubLogo from "../../../assets/images/github-logo.svg"
 
-const Cursor = () => {
+const CustomCursor = () => {
   useEffect(() => {
     const text = document.querySelector(".custom-cursor > p")
 
@@ -23,22 +23,23 @@ const Cursor = () => {
 
     document.addEventListener("mousemove", function (e) {
       // Get the center position of the custom cursor
-      const customCursor = document.getElementById("cursors")
+      const customCursor = document.getElementById("custom-cursor")
       const centerWidth = customCursor.offsetWidth / 2
       const centerHeight = customCursor.offsetHeight / 2
 
       // Position the center of the custom cursor at the position of the cursor
-      customCursor.style.transform = "translateY(" + (e.clientY - centerHeight) + "px)"
-      customCursor.style.transform += "translateX(" + (e.clientX - centerWidth) + "px)"
+      // customCursor.style.translate = "translateY(" + (e.clientY - centerHeight) + "px)"
+      // customCursor.style.transform += "translateX(" + (e.clientX - centerWidth) + "px)"
+      customCursor.style.translate = e.clientX - centerWidth + "px " + (e.clientY - centerHeight) + "px"
     })
   }, [])
 
   return (
-    <div className="custom-cursor" id="cursors">
+    <div className="custom-cursor" id="custom-cursor">
       <img src={githubLogo} alt="" />
       <p>. CHECK OUT PROJECT . CHECK OUT PROJECT </p>
     </div>
   )
 }
 
-export default Cursor
+export default CustomCursor

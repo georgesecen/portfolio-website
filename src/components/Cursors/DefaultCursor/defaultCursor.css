@@ -1,0 +1,16 @@
+.default-cursor{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.default-cursor > div{
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 50%;
+    background-color: black;
+}
