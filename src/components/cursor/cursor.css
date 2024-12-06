@@ -1,15 +1,30 @@
 .custom-cursor{
-    position: relative;
-    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
 }
 
 .custom-cursor > p{
-    text-align: center;
+    position: relative;
     font-family: sans-serif;
+    /* For cirular text to rotate at the center */
+    /* Height and width must be diameter of circular text*/
+    height: 13em;
+    width: 13em;
+    text-align: center;
+    animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotateZ(0)
+    }
+
+    to {
+        transform: rotateZ(360deg)
+    }
 }
 
 .custom-cursor > p > span{
     position: absolute;
     /* Radius of the circular text */
-    transform-origin: 0px 100px; 
+    transform-origin: 0em 6.5em; 
 }
