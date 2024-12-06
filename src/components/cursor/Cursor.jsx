@@ -1,12 +1,12 @@
 import { React, useEffect } from "react"
 import "./cursor.css"
+import githubLogo from "../../assets/images/github-logo.svg"
 
 const Cursor = () => {
-  // Make the text circular
   useEffect(() => {
     const text = document.querySelector(".custom-cursor > p")
 
-    // Put every letter in the text in its own individual span tag
+    // Put every character in the text in its own individual span tag
     text.innerHTML = text.textContent.replaceAll(/./g, "<span>$&</span>")
 
     // Get all of the span tags which each contain a letter of the text
@@ -35,6 +35,7 @@ const Cursor = () => {
 
   return (
     <div className="custom-cursor" id="cursors">
+      <img src={githubLogo} alt="" />
       <p>. CHECK OUT PROJECT . CHECK OUT PROJECT </p>
     </div>
   )
