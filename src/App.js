@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, DefaultCursor, CustomCursor } from "./components"
+import { Navbar, DefaultCursor, CustomCursor, ProjectCard } from "./components"
 import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
 
@@ -34,6 +34,7 @@ function App() {
         <CodeLanguageIcon language={"python"}></CodeLanguageIcon>
         <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>
       </div>
+      <ProjectCard></ProjectCard>
     </div>
   )
 }

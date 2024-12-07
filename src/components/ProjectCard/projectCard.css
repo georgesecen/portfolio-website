@@ -1,0 +1,30 @@
+
+
+.project-card{
+  width: 85%;
+}
+
+.project-card > img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Container holds project title and tech used */
+.project-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tech{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+    background: url("https://img.freepik.com/premium-photo/abstract-blurred-sky-colorful_40299-22.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
