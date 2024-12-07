@@ -1,0 +1,20 @@
+.code-language-icon{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid;
+    padding: 3px 6px 3px 6px;
+    gap: 4px;
+}
+
+.code-language-icon > img{
+    width: 1.1em;
+}
+
+.code-language-icon > p{
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
