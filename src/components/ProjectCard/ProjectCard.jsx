@@ -1,9 +1,9 @@
 import React from "react"
 import "./projectCard.css"
 import CodeLanguageIcon from "../CodeLanguageIcon/CodeLanguageIcon"
-import MoneyImage from "../../assets/images/projects/moneyTrackerApp/login.png"
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, languages, image, link }) => {
+  // Function used to toggling custom cursor when hovering over project card
   function toggleCustomCursor() {
     const defaultCursor = document.getElementById("default-cursor")
     const customCursor = document.getElementById("custom-cursor")
@@ -11,14 +11,17 @@ const ProjectCard = () => {
     customCursor.classList.toggle("show")
   }
 
+  console.log(title)
+
   return (
-    <a onMouseEnter={toggleCustomCursor} onMouseLeave={toggleCustomCursor} href="google.com" target="_blank" className="project-card">
-      <img src={MoneyImage} alt="" />
+    <a onMouseEnter={toggleCustomCursor} onMouseLeave={toggleCustomCursor} href={link} rel="noreferrer" target="_blank" className="project-card">
+      <img src={image} alt="" />
       <div className="project-details">
-        <h2>Money Tracker App</h2>
+        <h2>{title}</h2>
         <div className="project-tech">
-          <CodeLanguageIcon language={"java"}></CodeLanguageIcon>
-          <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>
+          {languages.map((language, index) => {
+            return <CodeLanguageIcon key={index} language={language}></CodeLanguageIcon>
+          })}
         </div>
       </div>
     </a>

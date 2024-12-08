@@ -3,6 +3,9 @@ import { Navbar, DefaultCursor, CustomCursor, ProjectCard } from "./components"
 import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
 
+// For project card
+import { MoneyTrack } from "./assets/images"
+
 function App() {
   return (
     <div>
@@ -34,7 +37,7 @@ function App() {
         <CodeLanguageIcon language={"python"}></CodeLanguageIcon>
         <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>
       </div>
-      <ProjectCard></ProjectCard>
+      <ProjectCard title={"Money Tracker App"} languages={["java", "mysql"]} image={MoneyTrack} link={"https://www.google.ca/"}></ProjectCard>
     </div>
   )
 }
