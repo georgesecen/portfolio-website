@@ -11,7 +11,7 @@ const CodeLanguageIcon = ({ language }) => {
     angular: [logos.angularLogo, "rgb(221, 0, 49)"],
     java: [logos.javaLogo, "rgb(231, 111, 0)"],
     javascript: [logos.javascriptLogo, "rgb(247, 223, 30)"],
-    mysql: [logos.mysqlLogo, "rgb(0, 117, 143)"],
+    mysql: [logos.mysqlLogo, "rgb(63 189 217)"],
     python: [logos.pythonLogo, "#3776ab"],
     react: [logos.reactLogo, "rgb(83, 193, 222)"],
     typescript: [logos.typescriptLogo, "rgb(0, 122, 204)"],
