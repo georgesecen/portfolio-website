@@ -11,8 +11,6 @@ const ProjectCard = ({ title, languages, image, link }) => {
     customCursor.classList.toggle("show")
   }
 
-  console.log(title)
-
   return (
     <a onMouseEnter={toggleCustomCursor} onMouseLeave={toggleCustomCursor} href={link} rel="noreferrer" target="_blank" className="project-card">
       <img src={image} alt="" />
