@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, DefaultCursor, CustomCursor, ProjectCard } from "./components"
+import { Navbar, DefaultCursor, CustomCursor, ProjectCard, ProjectCard2 } from "./components"
 import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
 
@@ -38,6 +38,7 @@ function App() {
         <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>
       </div>
       <ProjectCard title={"Money Tracker App"} languages={["java", "mysql"]} image={MoneyTrack} link={"https://www.google.ca/"}></ProjectCard>
+      <ProjectCard2 title={"Money Tracker App"} languages={["java", "mysql"]} image={MoneyTrack} link={"https://www.google.ca/"}></ProjectCard2>
     </div>
   )
 }
