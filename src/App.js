@@ -1,6 +1,10 @@
 import React from "react"
-import { Navbar, DefaultCursor, CustomCursor } from "./components"
+import { Navbar, DefaultCursor, CustomCursor, ProjectCard } from "./components"
+import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
+
+// For project card
+import { MoneyTrack } from "./assets/images"
 
 function App() {
   return (
@@ -24,6 +28,16 @@ function App() {
       >
         hover over me
       </div>
+      <div style={{ display: "flex", gap: "5px" }}>
+        <CodeLanguageIcon language={"react"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"angular"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"java"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"javascript"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"typescript"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"python"}></CodeLanguageIcon>
+        <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>
+      </div>
+      <ProjectCard title={"Money Tracker App"} languages={["java", "mysql"]} image={MoneyTrack} link={"https://www.google.ca/"}></ProjectCard>
     </div>
   )
 }

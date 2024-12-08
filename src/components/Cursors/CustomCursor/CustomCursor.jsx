@@ -1,6 +1,6 @@
 import { React, useEffect } from "react"
 import "./customCursor.css"
-import githubLogo from "../../../assets/images/github-logo.svg"
+import { githubLogo } from "../../../assets/images"
 
 const CustomCursor = () => {
   useEffect(() => {
