@@ -11,7 +11,12 @@ import { Test } from "./assets/images"
 function App() {
   return (
     <div>
-      <Bar></Bar>
+      <Bar label={"test text"} value={50} color={"blue"}></Bar>
+      <Bar label={"test text"} value={35} color={"green"}></Bar>
+      <Bar label={"test text"} value={20} color={"purple"}></Bar>
+      <Bar label={"test text"} value={20} color={"yellow"}></Bar>
+      <Bar label={"test text"} value={20} color={"red"}></Bar>
+      <Bar label={"test text"} value={20} color={"orange"}></Bar>
     </div>
   )
 }
