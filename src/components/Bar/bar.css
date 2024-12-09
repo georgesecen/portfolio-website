@@ -1,10 +1,25 @@
+/* Inspiration from https://codepen.io/rgg/pen/rVgBEL */
+
+/* Container holds the bar and the bar label */
+.bar-container{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    /* So that user sees label from more of a birds eye view */
+    transform: rotateX(30deg) translateY(0.4em);
+}
 
 .bar{
     position: relative;
     width: 2em;
+    height: 10em;
     transform: rotateX(-30deg) rotateY(-135deg);
     transform-style: preserve-3d;
-    margin-left: 50px;
 }
 
 /* Rotating all of the faces to form a rectangle. Background colors also help to make shape look more 3d. */
@@ -13,16 +28,49 @@
     width: 2em;
     height: 10em;
     background-color: rgba(241, 241, 241, 0.8);
+    overflow: hidden;
 }
 .right-face{
     transform: rotateY(180deg) translateY(-10em) translateZ(1em);
     width: 2em;
     height: 10em;
     background-color: rgba(216, 216, 216, 0.8);
+    overflow: hidden;
 }
 .top-face{
     transform: rotateX(90deg) translateZ(21em);
     background-color: rgba(254, 254, 254, 0.8);
     width: 2em;
     height: 2em;
+}
+
+/* Used for box shadow on bottom of bar to look more 3d */
+.bottom-face{
+    transform: rotateX(-90deg) translateY(0em) translateZ(-13em) rotate(180deg);
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.35), 0.6em -1em 3em rgba(0, 0, 0, 0.55), 1em 1em 10em rgba(254, 254, 254, 0.8);
+    width: 2em;
+    height: 2em;
+}
+
+/* The growing bar is the colored slider which translates up and down the rectangle face */
+.growing-bar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 202, 244, 0.8);
+    text-align: center;
+    /* Is how far down the growing bar is on the reactangle faces */
+    transform: translateY(20%);
+
+}
+/* This displays the percentage number on the growing bars */
+.growing-bar::before{
+    display: inline-block;
+    content: "80";
+    color: #0b7da7;
+    border-top: 2px dotted;
+    border-top-color: #1ca4d6;
+    padding: 0.8em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    font-weight: 700;
 }
