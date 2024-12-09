@@ -20,7 +20,7 @@ const Bar = ({ value, label, color }) => {
       // Set the background color of the growing bar
       bar.classList.add(`${color}-bar`)
     })
-  }, [])
+  }, [value]) // Anytime value in bar props is changed bar will animate to value
 
   // Function animates growing bars to specified percentage
   function animateBar(percentage) {
