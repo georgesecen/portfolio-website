@@ -1,6 +1,5 @@
 import { React, useEffect } from "react"
 import "./bar.css"
-import CodeLanguageIcon from "../CodeLanguageIcon/CodeLanguageIcon"
 
 const Bar = ({ value, label, color }) => {
   // Create random names for growing bar tags as there will be multiple bars so we need to make sure
@@ -57,14 +56,7 @@ const Bar = ({ value, label, color }) => {
         <div className="top-face"></div>
         <div className="bottom-face"></div>
       </div>
-      <div
-        onClick={() => {
-          animateBar(100)
-        }}
-        className="label"
-      >
-        {label}
-      </div>
+      <div className="label">{label}</div>
     </div>
   )
 }

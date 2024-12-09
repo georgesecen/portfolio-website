@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, DefaultCursor, CustomCursor, ProjectCard, ProjectCard2, Bar } from "./components"
+import { Navbar, DefaultCursor, CustomCursor, ProjectCard, ProjectCard2, BarChart } from "./components"
 import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
 
@@ -11,12 +11,15 @@ import { Test } from "./assets/images"
 function App() {
   return (
     <div>
-      <Bar label={"test text"} value={50} color={"blue"}></Bar>
-      <Bar label={"test text"} value={35} color={"green"}></Bar>
-      <Bar label={"test text"} value={20} color={"purple"}></Bar>
-      <Bar label={"test text"} value={20} color={"yellow"}></Bar>
-      <Bar label={"test text"} value={20} color={"red"}></Bar>
-      <Bar label={"test text"} value={20} color={"orange"}></Bar>
+      <BarChart
+        series={[
+          { value: 43, label: <CodeLanguageIcon language={"java"}></CodeLanguageIcon>, color: "blue" },
+          { value: 23, label: <CodeLanguageIcon language={"python"}></CodeLanguageIcon>, color: "green" },
+          { value: 93, label: <CodeLanguageIcon language={"react"}></CodeLanguageIcon>, color: "purple" },
+          { value: 20, label: <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>, color: "red" },
+          { value: 51, label: <CodeLanguageIcon language={"javascript"}></CodeLanguageIcon>, color: "orange" },
+        ]}
+      ></BarChart>
     </div>
   )
 }
