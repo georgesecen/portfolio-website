@@ -1,0 +1,137 @@
+/* Inspiration from https://codepen.io/rgg/pen/rVgBEL */
+
+/* Container holds the bar and the bar label */
+.bar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    /* So that user sees label from more of a birds eye view */
+    transform: rotateX(30deg) translateY(0.4em);
+}
+
+.bar{
+    position: relative;
+    width: 2em;
+    height: 10em;
+    transform: rotateX(-30deg) rotateY(-135deg);
+    transform-style: preserve-3d;
+}
+
+#test{
+    display: none;
+}
+/* Rotating all of the faces to form a rectangle. Background colors also help to make shape look more 3d. */
+.left-face{
+    transform: rotateY(90deg) translateZ(1em);
+    width: 2em;
+    height: 10em;
+    background-color: rgba(241, 241, 241, 0.8);
+    overflow: hidden;
+}
+.right-face{
+    transform: rotateY(180deg) translateY(-10em) translateZ(1em);
+    width: 2em;
+    height: 10em;
+    background-color: rgba(216, 216, 216, 0.9);
+    overflow: hidden;
+}
+.top-face{
+    transform: rotateX(90deg) translateZ(21em);
+    background-color: rgba(254, 254, 254, 0.9);
+    width: 2em;
+    height: 2em;
+}
+
+/* Used for box shadow on bottom of bar to look more 3d */
+.bottom-face{
+    transform: rotateX(-90deg) translateY(0em) translateZ(-13em) rotate(180deg);
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.35), 0.6em -1em 3em rgba(0, 0, 0, 0.55), 1em 1em 10em rgba(254, 254, 254, 0.8);
+    width: 2em;
+    height: 2em;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+.bar:hover > .bottom-face{
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.35), 0.6em -1em 3em rgba(0, 0, 0, 1), 1em 1em 10em rgba(254, 254, 254, 0.8);
+}
+
+/* The growing bar is the colored slider which translates up and down the rectangle face */
+.growing-bar{
+    display: inline-block;
+    width: 105%; /* 105% because for some reason when growing bar translates it shrink so slighly  */
+    height: 100%;
+    background-color: rgba(87, 202, 244, 0.8);
+    text-align: center;
+    /* Translate how far down the growing bar is on the reactangle faces */
+    translate: 0 100%;
+    transition-property: translate;
+    transition-duration: 2s;
+}
+
+/* This displays the percentage number on the growing bars */
+.growing-bar > span{
+    display: inline-block;
+    border-top-style: dotted;
+    border-top-width: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    font-weight: 700;
+    width: 100%;
+    padding-top: 0.8em;
+}
+
+
+/* Different bar and percentage text colors */
+.yellow-bar{
+    background-color: rgba(241, 196, 15, 0.8);
+}
+.yellow-percentage-text{
+    border-top-color: #c29d0b;
+    color: #7e6604;
+}
+
+.red-bar{
+    background-color: rgb(255 42 42 / 80%);
+}
+.red-percentage-text{
+    border-top-color: #d20000;
+    color: #a70020;
+}
+
+.purple-bar{
+    background-color: rgba(236, 0, 140, 0.8);
+}
+.purple-percentage-text{
+    border-top-color: #b9006e;
+    color: #65003c;
+}
+
+.green-bar{
+    background-color: rgba(118, 201, 0, 0.8);
+}
+.green-percentage-text{
+    border-top-color: #589600;
+    color: rgb(65 112 0);
+}
+
+.blue-bar{
+    background-color: rgba(87, 202, 244, 0.8);
+}
+.blue-percentage-text{
+    border-top-color: #1ca4d6;
+    color: #0b7da7;
+}
+
+.orange-bar{
+    background-color: rgb(255 148 22 / 95%);
+}
+.orange-percentage-text{
+    border-top-color: #ce6900;
+    color: #744300;
+}
+
+
