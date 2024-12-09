@@ -22,6 +22,9 @@
     transform-style: preserve-3d;
 }
 
+#test{
+    display: none;
+}
 /* Rotating all of the faces to form a rectangle. Background colors also help to make shape look more 3d. */
 .left-face{
     transform: rotateY(90deg) translateZ(1em);
@@ -50,6 +53,12 @@
     box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.35), 0.6em -1em 3em rgba(0, 0, 0, 0.55), 1em 1em 10em rgba(254, 254, 254, 0.8);
     width: 2em;
     height: 2em;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    background-color: transparent;
+}
+.bar:hover > .bottom-face{
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.35), 0.6em -1em 3em rgba(0, 0, 0, 1), 1em 1em 10em rgba(254, 254, 254, 0.8);
 }
 
 /* The growing bar is the colored slider which translates up and down the rectangle face */
@@ -58,19 +67,21 @@
     height: 100%;
     background-color: rgba(87, 202, 244, 0.8);
     text-align: center;
-    /* Is how far down the growing bar is on the reactangle faces */
-    transform: translateY(20%);
-
+    /* Translate how far down the growing bar is on the reactangle faces */
+    translate: 0 100%;
+    transition-property: translate;
+    transition-duration: 2s;
 }
 /* This displays the percentage number on the growing bars */
-.growing-bar::before{
+.growing-bar::after{
+    content: attr(value);
     display: inline-block;
-    content: "80";
     color: #0b7da7;
     border-top: 2px dotted;
     border-top-color: #1ca4d6;
-    padding: 0.8em;
     font-family: 'Open Sans', sans-serif;
     font-size: .8em;
     font-weight: 700;
+    width: 100%;
+    padding-top: 0.8em;
 }
