@@ -1,14 +1,14 @@
 import React from "react"
 import "./experienceCard.css"
 
-const ExperienceCard = () => {
+const ExperienceCard = ({ title, description, date }) => {
   return (
     <div className="experience-card">
       <div>
-        <h2>Title</h2>
-        <p>short description/subtitle</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
-      <p>January 2020 - October 2024</p>
+      <p>{date}</p>
     </div>
   )
 }
