@@ -1,0 +1,10 @@
+.experience-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contains card title and short description/subtitle */
+.experience-card > div{
+    display: flex;
+    flex-direction: column;
+}
