@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, DefaultCursor, CustomCursor, ProjectCard, ProjectCard2, BarChart } from "./components"
+import { Navbar, DefaultCursor, CustomCursor, ProjectCard, ProjectCard2, BarChart, ExperienceCard } from "./components"
 import CodeLanguageIcon from "./components/CodeLanguageIcon/CodeLanguageIcon"
 import "./myersReset.css"
 
@@ -11,15 +11,8 @@ import { Test } from "./assets/images"
 function App() {
   return (
     <div>
-      <BarChart
-        series={[
-          { value: 43, label: <CodeLanguageIcon language={"java"}></CodeLanguageIcon>, color: "blue" },
-          { value: 23, label: <CodeLanguageIcon language={"python"}></CodeLanguageIcon>, color: "green" },
-          { value: 93, label: <CodeLanguageIcon language={"react"}></CodeLanguageIcon>, color: "purple" },
-          { value: 20, label: <CodeLanguageIcon language={"mysql"}></CodeLanguageIcon>, color: "red" },
-          { value: 51, label: <CodeLanguageIcon language={"javascript"}></CodeLanguageIcon>, color: "orange" },
-        ]}
-      ></BarChart>
+      <ExperienceCard title={"Test title"} description={"Short description/subtitle"} date={"January 2020 - October 2024"}></ExperienceCard>
+      <ExperienceCard title={"Test title 2"} description={"Short description/subtitle"} date={"January 2020 - October 2024"}></ExperienceCard>
     </div>
   )
 }
