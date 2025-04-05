@@ -80,7 +80,13 @@
     border-radius: 3em;
     color: black;
     text-decoration: none;
-    box-shadow: var(--button-box-shadow)
+    box-shadow: var(--button-box-shadow);
+
+    /* For button pushe down effect */
+    transition: transform 0.25s ease-in-out;
+}
+.socials-button:hover{
+    transform: translateY(-0.3em);
 }
 
 /* Social media link buttons */
