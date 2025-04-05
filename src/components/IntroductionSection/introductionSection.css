@@ -3,13 +3,19 @@
 .introduction-section-container{
     font-family: sans-serif;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 /* Hello text and im from Canada text */
-.introduction-section-container > p > h4{
+.introduction-section-container > section > h4{
     font-size: 1.5em;
 }
-.introduction-section-container > p > h4 > span{
+.introduction-section-container > section > h4 > span{
     /* Underlining the words Software Developer */
     text-decoration: underline;
     text-decoration-thickness: 0.05em;
@@ -17,9 +23,23 @@
 }
 
 /* My name text */
-.introduction-section-container > p > h1{
+.introduction-section-container > section > h1{
     font-size: 3em;
     margin: 0.3em 0 0.3em 0;
+}
+
+/* Box shadow for all buttons */
+:root {
+    --button-box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.25);
+}
+
+/* Container which holds all cv and socials buttons */
+.introduction-section-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75em;
 }
 
 /* Container holds view cv text and arrow icon */
@@ -32,9 +52,10 @@
     background-color: white;
     width: fit-content;
     text-decoration: none;
+    white-space: nowrap;
     color: black;
     border-radius: 2em;
-    box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.5);
+    box-shadow: var(--button-box-shadow)
 }
 .cv-button > img{
     width: 2.35em;
@@ -45,4 +66,43 @@
 }
 .cv-button:hover > img{
     transform: rotateZ(0deg);
+}
+
+/* Class used on all social media link buttons */
+.socials-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3em;
+    color: black;
+    text-decoration: none;
+    box-shadow: var(--button-box-shadow)
+}
+
+/* Social media link buttons */
+.github-button{
+    color: black;
+    border: 1.5px solid black;
+    padding: 0.6em 0.85em 0.6em 0.85em;
+}
+.github-button > img{
+    width: 1.5em;
+}
+.linkedin-button{
+    border: 1.5px solid #0077B5;
+    padding: 0.375em 0.70em 0.375em 0.70em;
+}
+.linkedin-button > img{
+    width: 2em;
+}
+.email-button{
+    border: 1.5px solid #c1253f;
+    padding: 0.5em 0.85em 0.5em 0.85em;
+}
+.email-button > img{
+    width: 1.75em;
 }
