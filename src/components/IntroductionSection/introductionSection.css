@@ -1,0 +1,23 @@
+
+/* Container holds introduction text and socials/resume buttons */
+.introduction-section-container{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Hello text and im from Canada text */
+.introduction-section-container > p > h4{
+    font-size: 1.5em;
+}
+.introduction-section-container > p > h4 > span{
+    /* Underlining the words Software Developer */
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.1em;
+}
+
+/* My name text */
+.introduction-section-container > p > h1{
+    font-size: 3em;
+    margin: 0.3em 0 0.3em 0;
+}
