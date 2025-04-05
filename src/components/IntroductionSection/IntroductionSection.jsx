@@ -2,8 +2,10 @@ import React from 'react'
 import { arrowIcon } from '../../assets/images'
 import "./introductionSection.css"
 
-// Get CV pdf
+// Get links to CV and socials
 const curriculumVitae = require("../../assets/CV/cv.pdf")
+const githubLink = "https://github.com/georgesecen"
+const linkedinLink = "https://www.linkedin.com/in/george-secen-0084a9351/"
 
 const IntroductionSection = () => {
   return (
@@ -20,6 +22,8 @@ const IntroductionSection = () => {
                 <p>Review CV</p>
                 <img src={arrowIcon} />
             </a>
+            <a className='github-button' href={githubLink} rel="noreferrer" target="_blank">Github</a>
+            <a className='linkedin-button' href={linkedinLink} rel="noreferrer" target="_blank">Linkedin</a>
         </div>
     </div>
   )
