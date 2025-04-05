@@ -1,4 +1,5 @@
 import React from 'react'
+import { arrowIcon } from '../../assets/images'
 import "./introductionSection.css"
 
 // Get CV pdf
@@ -14,7 +15,11 @@ const IntroductionSection = () => {
         </p>
 
         <div>
-            <a href={`${curriculumVitae}`} rel="noreferrer" target="_blank">View CV</a>
+            {/* TODO: Make button look better */}
+            <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
+                <p>Review CV</p>
+                <img src={arrowIcon} />
+            </a>
         </div>
     </div>
   )

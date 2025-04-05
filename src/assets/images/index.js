@@ -11,3 +11,6 @@ export { default as typescriptLogo } from "./logos/typescript-logo.svg"
 // Project images
 export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"
 export { default as Test } from "./projects/moneyTrackerApp/test.jpg"
+
+// Icons
+export { default as arrowIcon } from "./icons/arrow.svg"
