@@ -5,6 +5,7 @@ import {
   CustomCursor, 
   ProjectCard, 
   ProjectCard2, 
+  ProjectCard3,
   BarChart, 
   ExperienceCard, 
   IntroductionSection
@@ -20,7 +21,12 @@ import { Test } from "./assets/images"
 function App() {
   return (
     <div>
-      <IntroductionSection />
+      <ProjectCard3
+        title="Cool Test App" 
+        description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
+        image={MoneyTrack}
+        >
+      </ProjectCard3>
     </div>
   )
 }
