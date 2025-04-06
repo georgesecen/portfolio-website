@@ -15,8 +15,7 @@ import "./myersReset.css"
 
 // For project card
 // Note: Images should all be same size for animation to look the best
-import { MoneyTrack } from "./assets/images"
-import { Test } from "./assets/images"
+import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 
 function App() {
   return (
@@ -25,6 +24,12 @@ function App() {
         title="Cool Test App" 
         description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
         image={MoneyTrack}
+        >
+      </ProjectCard3>
+      <ProjectCard3
+        title="Cool Test App" 
+        description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
+        image={iPhoneImage}
         >
       </ProjectCard3>
     </div>

@@ -1,0 +1,13 @@
+
+/* Container holds entire project card component */
+.project-card3{
+    width: fit-content;
+}
+
+/* Project images */
+.project-card3 > img{
+    width: 80%;
+    max-width: 30em;
+    max-height: 25em;
+    object-fit: contain;
+}

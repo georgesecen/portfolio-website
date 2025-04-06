@@ -13,6 +13,7 @@ export { default as emailLogo } from "./logos/email-logo.svg"
 // Project images
 export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"
 export { default as Test } from "./projects/moneyTrackerApp/test.jpg"
+export { default as iPhoneImage } from "./projects/moneyTrackerApp/iphone-screen.jpeg"
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"
