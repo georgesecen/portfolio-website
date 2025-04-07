@@ -22,7 +22,7 @@ function App() {
     <div>
       <ProjectCard3
         title="Cool Test App" 
-        description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
+        description="skdjfoisjdfois jdfois jdfoi oidsjfois djfoisj dfois jdfoij  jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
         image={MoneyTrack}
         >
       </ProjectCard3>

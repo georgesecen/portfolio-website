@@ -2,12 +2,31 @@
 /* Container holds entire project card component */
 .project-card3{
     width: fit-content;
+    background-color: white;
+    padding: 1.25em 1.75em 1.25em 1.75em;
+    border-radius: 1em;
+    width: 90%;
+    max-width: 35em;
+
+    /* So padding is included in width */
+    box-sizing: border-box; 
 }
 
-/* Project images */
-.project-card3 > img{
-    width: 80%;
-    max-width: 30em;
-    max-height: 25em;
+/* Image has 2 containers so it can maintain aspect ratio and have rounded corners */
+.image-container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container3 > div{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container3 > div > img{
+    width: 100%;
+    max-height: 20em;
     object-fit: contain;
+    border-radius: 15px;
 }
