@@ -6,10 +6,18 @@
     padding: 1.25em 1.75em 1.25em 1.75em;
     border-radius: 1em;
     width: 90%;
-    max-width: 35em;
+    max-width: 25em;
+    font-family: sans-serif;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+    /* For the project card pop out effect */
+    transition: box-shadow 0.20s ease-in-out;
 
     /* So padding is included in width */
     box-sizing: border-box; 
+}
+.project-card3:hover{
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Image has 2 containers so it can maintain aspect ratio and have rounded corners */
@@ -29,4 +37,21 @@
     max-height: 20em;
     object-fit: contain;
     border-radius: 15px;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2);
+
+    /* For the image pop out effect */
+    transition: box-shadow 0.20s ease-in-out;
+}
+.project-card3:hover > .image-container3 > div > img{
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Project title */
+.project-card3 > h4{
+    margin-top: 1.5em;
+    font-size: 1.1em;
+}
+/* Project description */
+.project-card3 > p{
+    margin-top: 0.5em;
 }
