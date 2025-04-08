@@ -23,13 +23,15 @@ function App() {
       <ProjectCard3
         title="Cool Test App" 
         description="skdjfoisjdfois jdfois jdfoi oidsjfois djfoisj dfois jdfoij  jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
-        image={MoneyTrack}
+        images={[MoneyTrack, Test]}
+        languages={["javascript", "python", "react", "mysql"]}
         >
       </ProjectCard3>
       <ProjectCard3
         title="Cool Test App" 
         description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
-        image={iPhoneImage}
+        images={[iPhoneImage, MoneyTrack]}
+        languages={["javascript", "python", "react", "mysql"]}
         >
       </ProjectCard3>
     </div>
