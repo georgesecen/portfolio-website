@@ -4,6 +4,18 @@ import "./codeLanguageIcon.css"
 // Get all the programming language logos
 import * as logos from "../../assets/images"
 
+/**
+ * Clean looking label which contains a coding langauges icon, next to its name.
+ * @param {string} language Coding language to display label for. Valid options are:
+ * - angular
+ * - java
+ * - javascript
+ * - mysql
+ * - python
+ * - react
+ * - typescript
+ * @returns {React.JSX.Element} CodeLanguageIcon React component.
+ */
 const CodeLanguageIcon = ({ language }) => {
   // Create map so the logo displayed is for the language the user entered via props
   // {language name : [language logo, language color]}

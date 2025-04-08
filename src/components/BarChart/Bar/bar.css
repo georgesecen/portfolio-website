@@ -29,19 +29,19 @@
     transform: rotateY(90deg) translateZ(1em);
     width: 2em;
     height: 10em;
-    background-color: rgba(241, 241, 241, 0.8);
+    background-color: rgba(241, 241, 241, 1);
     overflow: hidden;
 }
 .right-face{
     transform: rotateY(180deg) translateY(-10em) translateZ(1em);
     width: 2em;
     height: 10em;
-    background-color: rgba(216, 216, 216, 0.9);
+    background-color: rgba(216, 216, 216, 1);
     overflow: hidden;
 }
 .top-face{
     transform: rotateX(90deg) translateZ(21em);
-    background-color: rgba(254, 254, 254, 0.9);
+    background-color: rgba(254, 254, 254, 1);
     width: 2em;
     height: 2em;
 }

@@ -1,6 +1,13 @@
 import { React, useEffect } from "react"
 import "./bar.css"
 
+/**
+ * 3D Bar used in 3D BarChart component. Bar has a label and value which the bar goes up to in its 3D container.
+ * @param {number} value Value of the bar. Value is displayed on faces of the bar. It is the percentage of how far up the sliding faces will go.
+ * @param {string|React.ReactNode} label Label for bar. Can be a string, HTML, or React component.
+ * @param {string} color Color of bar.
+ * @returns {JSX.Element} Bar React component.
+ */
 const Bar = ({ value, label, color }) => {
   // Create random names for growing bar tags as there will be multiple bars so we need to make sure
   // we are animating the correct bar

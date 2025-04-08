@@ -2,8 +2,11 @@ import React, { useState } from "react"
 import "./barChart.css"
 import Bar from "./Bar/Bar"
 
-// Series should be an array of maps. Each array index will be the data for a bar in the bar chart.
-// Array should be in format [{value: number (0 -> 100), label: html/react element, color: string color (Must be available color)}]
+/**
+ * 3D Bar chart which will be used to display programming skills.
+ * @param {Array<object>} series The data used to determine how each bar in the bar chart is rendered. Array should be in format [{value: number (0 -> 100), label: html/react element, color: string color (Must be available color)}]
+ * @returns {React.JSX.Element} BarChart React component.
+ */
 const BarChart = ({ series }) => {
   const [animateChart, setAnimateChart] = useState(false)
 
