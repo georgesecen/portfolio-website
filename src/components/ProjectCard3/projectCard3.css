@@ -1,0 +1,80 @@
+
+/* Container holds entire project card component */
+.project-card3{
+    /* Remove default styling from a tag */
+    all: unset;
+    
+    display: block;
+    width: fit-content;
+    background-color: white;
+    padding: 1.25em 1.75em 1.25em 1.75em;
+    border-radius: 1em;
+    width: 90%;
+    max-width: 25em;
+    font-family: sans-serif;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+    /* For the project card pop out effect */
+    transition: box-shadow 0.20s ease-in-out;
+
+    /* So padding is included in width */
+    box-sizing: border-box; 
+}
+.project-card3:hover{
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Container which image cycler and dummy placeholder image */
+.image-container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image cycler div actually contains images displayed to the user via background-image */
+.image-container3 > div{
+    background-image: url();
+    background-size: cover;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+    /* For image swapping effect, and for image pop out effect */
+    transition: background-image 1s, box-shadow 0.20s ease-in-out;
+}
+.project-card3:hover > .image-container3 > div{
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Image is just used to fill up the size so parent can use background-image to actually display
+the image to the user. Hence opacity: 0 */
+.image-container3 > div > img{
+    width: 100%;
+    max-height: 20em;
+    object-fit: contain;
+    opacity: 0;
+}
+
+
+/* Project title */
+.project-card3 > h4{
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    text-align: center;
+}
+/* Project description */
+.project-card3 > p{
+    margin-top: 0.5em;
+}
+
+/* Container which holds all coding language icons for langauges used in project */
+.project-tech3{
+    margin-top: 1.5em;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}

@@ -5,6 +5,7 @@ import {
   CustomCursor, 
   ProjectCard, 
   ProjectCard2, 
+  ProjectCard3,
   BarChart, 
   ExperienceCard, 
   IntroductionSection
@@ -14,13 +15,31 @@ import "./myersReset.css"
 
 // For project card
 // Note: Images should all be same size for animation to look the best
-import { MoneyTrack } from "./assets/images"
-import { Test } from "./assets/images"
+import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 
 function App() {
   return (
     <div>
-      <IntroductionSection />
+
+      <DefaultCursor />
+      <CustomCursor />
+
+      <ProjectCard3
+        title="Cool Test App" 
+        description="skdjfoisjdfois jdfois jdfoi oidsjfois djfoisj dfois jdfoij  jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
+        images={[MoneyTrack, Test]}
+        languages={["javascript", "python", "react", "mysql"]}
+        githubLink={"https://google.com"}
+        >
+      </ProjectCard3>
+      <ProjectCard3
+        title="Cool Test App" 
+        description="skdjfoisjdfois jdfois jdfoi jsodi ois doif jsodi jfoisjd fois jdoifjsoidj foisjd foisj dfoi jsodijf jisdoif jsodif j"
+        images={[iPhoneImage, MoneyTrack]}
+        languages={["javascript", "python", "react", "mysql"]}
+        githubLink={"https://google.com"}
+        >
+      </ProjectCard3>
     </div>
   )
 }
