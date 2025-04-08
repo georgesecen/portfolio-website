@@ -2,7 +2,17 @@ import { React, useEffect, useRef } from 'react'
 import CodeLanguageIcon from '../CodeLanguageIcon/CodeLanguageIcon'
 import "./projectCard3.css"
 
-const ProjectCard3 = ({ title, description, images, languages }) => {
+/**
+ * Project card displays all details of project to user and directs user to project repository on Github when
+ * project card is clicked.
+ * @param {string} title Title of project. 
+ * @param {string} description Description of project. 
+ * @param {Array<string>} images Project images which will be cycled through on project card. All images should be the same aspect ratio for image switch animation to look the best. 
+ * @param {Array<string>} languages Languages used in project. This will display language icons on the project card.
+ * @param {string} githubLink Link to project repository on Github.
+ * @returns {JSX.Element} ProjectCard3 react component.
+ */
+const ProjectCard3 = ({ title, description, images, languages, githubLink }) => {
 
     // Create random id for image tag as there will be multiple project cards so we need to make sure
     // we are animating the correct project card image
@@ -31,8 +41,23 @@ const ProjectCard3 = ({ title, description, images, languages }) => {
       }
   }, [])
 
+  // Function used to toggle custom Github cursor when hovering over project card
+  function toggleCustomCursor() {
+    const defaultCursor = document.getElementById("default-cursor")
+    const customCursor = document.getElementById("custom-cursor")
+    defaultCursor.classList.toggle("show")
+    customCursor.classList.toggle("show")
+  }
+
   return (
-    <div className='project-card3'>
+    <a 
+      className='project-card3' 
+      href={githubLink}
+      rel="noreferrer" 
+      target="_blank"
+      onMouseEnter={toggleCustomCursor} 
+      onMouseLeave={toggleCustomCursor}
+      >
 
       <div className='image-container3'>
 
@@ -48,13 +73,13 @@ const ProjectCard3 = ({ title, description, images, languages }) => {
       <h4>{title}</h4>
       <p>{description}</p>
 
-      {/* Displaying technologies used */}
+      {/* Displaying languages used in project */}
       <div className="project-tech3">
         {languages.map((language, index) => {
           return <CodeLanguageIcon key={index} language={language}></CodeLanguageIcon>
         })}
       </div>
-    </div>
+    </a>
   )
 }
 

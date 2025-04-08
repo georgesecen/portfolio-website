@@ -1,6 +1,10 @@
 
 /* Container holds entire project card component */
 .project-card3{
+    /* Remove default styling from a tag */
+    all: unset;
+    
+    display: block;
     width: fit-content;
     background-color: white;
     padding: 1.25em 1.75em 1.25em 1.75em;
@@ -20,14 +24,14 @@
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Container which image cycler and dummy placeholder image */
 .image-container3{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Div actually contains images displayed to the user via background-image */
+/* Image cycler div actually contains images displayed to the user via background-image */
 .image-container3 > div{
     background-image: url();
     background-size: cover;
