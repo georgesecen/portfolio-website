@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
+import handleViewport from "react-in-viewport"
 import "./barChart.css"
 import Bar from "./Bar/Bar"
 
@@ -8,22 +9,19 @@ import Bar from "./Bar/Bar"
  * @returns {React.JSX.Element} BarChart React component.
  */
 const BarChart = ({ series }) => {
-  const [animateChart, setAnimateChart] = useState(false)
 
   return (
     <div className="barchart">
       {series.map((data, index) => {
-        // Only set the bar value to its real value if animateChart is true as it will then make the bar animate to its real value, otherwise
-        // it will just animate to 0 which the user will not be able to see
-        return <Bar key={index} value={animateChart ? data.value : 0} label={data.label} color={data.color}></Bar>
+
+        // https://www.npmjs.com/package/react-in-viewport
+        // https://github.com/roderickhsiao/react-in-viewport#readme
+
+        // So that the Bar component can animate based on if its scrolled in/out of view
+        const ViewportBlock = handleViewport(Bar, /** options: {}, config: {} **/)
+
+        return <ViewportBlock  key={index} value={data.value} label={data.label} color={data.color} />
       })}
-      <button
-        onClick={() => {
-          setAnimateChart(!animateChart)
-        }}
-      >
-        Aniamte chart
-      </button>
     </div>
   )
 }
