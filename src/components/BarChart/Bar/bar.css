@@ -87,31 +87,31 @@
 
 /* Different bar and percentage text colors */
 .yellow-bar{
-    background-color: rgba(241, 196, 15, 0.8);
+    background-color: rgba(241, 196, 15, 0.5);
 }
 .yellow-percentage-text{
     border-top-color: #c29d0b;
-    color: #7e6604;
+    color: #665203;
 }
 
 .red-bar{
-    background-color: rgb(255 42 42 / 80%);
+    background-color: rgba(255, 42, 42, 0.5);
 }
 .red-percentage-text{
     border-top-color: #d20000;
     color: #a70020;
 }
 
-.purple-bar{
-    background-color: rgba(236, 0, 140, 0.8);
+.pink-bar{
+    background-color: rgba(236, 0, 140, 0.5);
 }
-.purple-percentage-text{
+.pink-percentage-text{
     border-top-color: #b9006e;
     color: #65003c;
 }
 
 .green-bar{
-    background-color: rgba(118, 201, 0, 0.8);
+    background-color: rgba(118, 201, 0, 0.5);
 }
 .green-percentage-text{
     border-top-color: #589600;
@@ -119,7 +119,7 @@
 }
 
 .blue-bar{
-    background-color: rgba(87, 202, 244, 0.8);
+    background-color: rgba(87, 202, 244, 0.5);
 }
 .blue-percentage-text{
     border-top-color: #1ca4d6;
@@ -127,11 +127,35 @@
 }
 
 .orange-bar{
-    background-color: rgb(255 148 22 / 95%);
+    background-color: rgba(255, 148, 22, 0.5);
 }
 .orange-percentage-text{
     border-top-color: #ce6900;
     color: #744300;
+}
+
+.purple-bar{
+    background-color: rgba(231, 76, 255, 0.5);
+}
+.purple-percentage-text{
+    border-top-color: #9f00d3;
+    color: #75008d;
+}
+
+.brown-bar{
+    background-color: rgba(189, 45, 2, 0.5);
+}
+.brown-percentage-text{
+    border-top-color: #9d2d00;
+    color: #6d2a01;
+}
+
+.teal-bar{
+    background-color: rgba(16, 255, 215, 0.5);
+}
+.teal-percentage-text{
+    border-top-color: #00a66f;
+    color: #006751;
 }
 
 

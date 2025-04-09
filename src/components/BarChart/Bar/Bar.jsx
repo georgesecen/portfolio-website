@@ -9,7 +9,16 @@ import "./bar.css"
  * 3D Bar used in 3D BarChart component. Bar has a label and value which the bar goes up to in its 3D container.
  * @param {number} value Value of the bar. Value is displayed on faces of the bar. It is the percentage of how far up the sliding faces will go.
  * @param {string|React.ReactNode} label Label for bar. Can be a string, HTML, or React component.
- * @param {string} color Color of bar.
+ * @param {string} color Color of bar. Valid options are:
+ * - yellow
+ * - red
+ * - pink
+ * - green
+ * - blue
+ * - orange
+ * - purple
+ * - brown
+ * - teal
  * @param {boolean} inViewport True if the bar is currently in view, otherwise false. This is used to animate the bar in/out based on if its in/out of view.
  * @param {React.Ref} forwardedRef Reference which is needed on Bar component in order to track if it is in/out of view.
  * @returns {JSX.Element} Bar React component.
