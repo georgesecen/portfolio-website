@@ -14,6 +14,8 @@ import * as logos from "../../assets/images"
  * - python
  * - react
  * - typescript
+ * - html
+ * - css
  * @returns {React.JSX.Element} CodeLanguageIcon React component.
  */
 const CodeLanguageIcon = ({ language }) => {
@@ -27,6 +29,8 @@ const CodeLanguageIcon = ({ language }) => {
     python: [logos.pythonLogo, "#3776ab"],
     react: [logos.reactLogo, "rgb(83, 193, 222)"],
     typescript: [logos.typescriptLogo, "rgb(0, 122, 204)"],
+    html: [logos.htmlLogo, "rgb(241, 101, 41)"],
+    css: [logos.cssLogo, "rgb(51, 170, 221)"]
   }
 
   return (

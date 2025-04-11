@@ -22,9 +22,7 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
-
       <SkillsSection />
-     
     </div>
   )
 }
