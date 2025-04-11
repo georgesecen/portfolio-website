@@ -1,0 +1,18 @@
+.skills-section{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Skills title */
+.skills-section > h1{
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+}
+/* Skills short description */
+.skills-section > p{
+    margin-bottom: 2em;
+}
+
+/* Container holds entire bar chart component */
+.skills-section > div{
+}

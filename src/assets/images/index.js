@@ -9,6 +9,8 @@ export { default as reactLogo } from "./logos/react-logo.svg"
 export { default as typescriptLogo } from "./logos/typescript-logo.svg"
 export { default as linkedinLogo } from "./logos/linkedin-logo.svg"
 export { default as emailLogo } from "./logos/email-logo.svg"
+export { default as htmlLogo } from "./logos/html5-logo.svg"
+export { default as cssLogo } from "./logos/css3-logo.svg"
 
 // Project images
 export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"

@@ -10,7 +10,7 @@ import "./projectCard3.css"
  * @param {Array<string>} images Project images which will be cycled through on project card. All images should be the same aspect ratio for image switch animation to look the best. 
  * @param {Array<string>} languages Languages used in project. This will display language icons on the project card.
  * @param {string} githubLink Link to project repository on Github.
- * @returns {JSX.Element} ProjectCard3 react component.
+ * @returns {JSX.Element} ProjectCard3 React component.
  */
 const ProjectCard3 = ({ title, description, images, languages, githubLink }) => {
 

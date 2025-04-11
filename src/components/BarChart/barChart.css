@@ -1,6 +1,7 @@
 .barchart{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 1em;
     row-gap: 1em;
 }

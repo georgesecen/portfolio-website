@@ -14,7 +14,7 @@ const emailLink = "mailto:george.secen.work@gmail.com"
 /**
  * Introduction section displays hello my name is ... text. It also contains links to my socials so
  * users can contact me and view my work. 
- * @returns {React.JSX.Element} IntroductionSection react component.
+ * @returns {React.JSX.Element} IntroductionSection React component.
  */
 const IntroductionSection = () => {
   return (

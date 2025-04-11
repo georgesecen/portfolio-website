@@ -1,15 +1,51 @@
 import { React, useEffect } from "react"
 import "./bar.css"
 
-const Bar = ({ value, label, color }) => {
-  // Create random names for growing bar tags as there will be multiple bars so we need to make sure
+// References for tracking when component is scrolled in/out of view
+// https://www.npmjs.com/package/react-in-viewport
+// https://github.com/roderickhsiao/react-in-viewport#readme
+
+/**
+ * 3D Bar used in 3D BarChart component. Bar has a label and value which the bar goes up to in its 3D container.
+ * @param {number} value Value of the bar. Value is displayed on faces of the bar. It is the percentage of how far up the sliding faces will go.
+ * @param {string|React.ReactNode} label Label for bar. Can be a string, HTML, or React component.
+ * @param {string} color Color of bar. Valid options are:
+ * - yellow
+ * - red
+ * - pink
+ * - green
+ * - blue
+ * - orange
+ * - purple
+ * - brown
+ * - teal
+ * @param {boolean} inViewport True if the bar is currently in view, otherwise false. This is used to animate the bar in/out based on if its in/out of view.
+ * @param {React.Ref} forwardedRef Reference which is needed on Bar component in order to track if it is in/out of view.
+ * @returns {JSX.Element} Bar React component.
+ */
+const Bar = ({ value, label, color, inViewport, forwardedRef }) => {
+
+  // Create random id for growing bar tags as there will be multiple bars so we need to make sure
   // we are animating the correct bar
   const id = Math.floor(Math.random() * 9999)
-
+  
+  // Animate bar based on if it is scrolled in/out of view everytime it is scolled in/out of view
   useEffect(() => {
-    // Set default value of bar
-    animateBar(value)
+    // If bar is scrolled in view
+    if (inViewport){
+      // Animate bar to its value
+      animateBar(value)
+    }
 
+    // If bar is scrolled out of view (Or not in view on render)
+    else{
+      // Reset bar to starting position
+      animateBar(0)
+    }
+  }, [inViewport])
+
+  // Set the bar to its specified color
+  useEffect(() => {
     // Get all the growing bars that belong to this bar
     const growingBars = document.getElementsByName(id)
 
@@ -20,7 +56,7 @@ const Bar = ({ value, label, color }) => {
       // Set the background color of the growing bar
       bar.classList.add(`${color}-bar`)
     })
-  }, [value]) // Anytime value in bar props is changed bar will animate to value
+  }, [])
 
   // Function animates growing bars to specified percentage
   function animateBar(percentage) {
@@ -38,7 +74,7 @@ const Bar = ({ value, label, color }) => {
   }
 
   return (
-    <div className="bar-container">
+    <div className="bar-container" ref={forwardedRef}>
       <div className="bar">
         {/* Only left, right, and top face are visible to the user, however bottom face adds box shadow to make shape more 3d */}
         <div className="left-face">
