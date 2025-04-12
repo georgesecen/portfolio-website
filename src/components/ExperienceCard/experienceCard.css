@@ -1,28 +1,31 @@
 .experience-card{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-family: sans-serif;
     border-bottom: 1px solid black;
-    padding: 2em;
+    padding: 2em 0em 2em 0em;
     font-size: 1.1em;
 }
 
 /* Contains card title and short description/subtitle */
-.experience-card > div{
-    display: flex;
+.left-side-details{
+    /* display: flex;
     flex-direction: column;
-    gap: 0.8em;
+    gap: 0.8em; */
+    text-align: left;
 }
 
 /* Card title */
-.experience-card > div > h2{
+.left-side-details > h2{
     font-size: 2.5em;
     position: relative;
     width: fit-content;
+    margin-bottom: 0.25em;
 }
 
 /* Title underline animation */
-.experience-card > div > h2::before{
+.left-side-details > h2::before{
     content: "";
     position: absolute;
     width: 0%;
@@ -33,6 +36,31 @@
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
-.experience-card:hover > div > h2::before{
+.experience-card:hover > .left-side-details > h2::before{
     width: 100%;
+}
+
+/* Container which holds date and experience type (Hybrid, onsite, remote) */
+.right-side-details{
+    text-align: right;
+}
+
+/* Date */
+.right-side-details > p:first-child{
+    margin-bottom: 0.3em;
+}
+
+/* So experience card is responsive */
+@media screen and (max-width: 750px){
+
+    /* So left side and right side stack on top of eachother */
+    .experience-card{
+        display: block;
+    }
+    .right-side-details{
+        text-align: left;
+    }
+    .left-side-details > p{
+        margin-bottom: 0.3em;
+    }
 }

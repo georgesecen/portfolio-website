@@ -22,7 +22,7 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
-      <SkillsSection />
+      <ExperienceCard title="Computer Science Tutor" description="St.Clair College" date="January 1970 - December 2050" type="On Site"></ExperienceCard>
     </div>
   )
 }
