@@ -11,7 +11,7 @@ import {
   IntroductionSection
  } from "./components"
 
-import { SkillsSection } from "./sections"
+import { SkillsSection, ExperiencesSection } from "./sections"
 
 import "./myersReset.css"
 
@@ -22,7 +22,7 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
-      <ExperienceCard title="Computer Science Tutor" description="St.Clair College" date="January 1970 - December 2050" type="On Site"></ExperienceCard>
+      <ExperiencesSection />
     </div>
   )
 }

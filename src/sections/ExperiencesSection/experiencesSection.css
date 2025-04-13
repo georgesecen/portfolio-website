@@ -1,0 +1,10 @@
+.experiences-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container which holds all experience cards */
+.experiences-section > div{
+    width: 90%;
+}
