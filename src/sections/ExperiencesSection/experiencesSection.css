@@ -1,7 +1,14 @@
 .experiences-section{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section title */
+.experiences-section > h1{
+    font-size: 2.5em;
+    font-family: sans-serif;
 }
 
 /* Container which holds all experience cards */

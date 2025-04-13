@@ -9,6 +9,7 @@ import "./experiencesSection.css"
 const ExperiencesSection = () => {
   return (
     <div className='experiences-section'>
+        <h1>Experience</h1>
         <div>
             <ExperienceCard 
                 title="Computer Science Tutor" 
