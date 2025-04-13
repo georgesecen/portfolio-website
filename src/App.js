@@ -11,7 +11,7 @@ import {
   IntroductionSection
  } from "./components"
 
-import { SkillsSection } from "./sections"
+import { SkillsSection, ExperiencesSection } from "./sections"
 
 import "./myersReset.css"
 
@@ -22,7 +22,7 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
-      <SkillsSection />
+      <ExperiencesSection />
     </div>
   )
 }
