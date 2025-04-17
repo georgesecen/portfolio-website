@@ -1,11 +1,18 @@
+
+/* For smooth scroll on navbar item click */
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
+    position: fixed;
     display: flex;
     width: fit-content;
     background: hsla(0, 0%, 90%, .5);
     padding: 3px;
     border-radius: 30px;
-    position: relative;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navbar > a{
