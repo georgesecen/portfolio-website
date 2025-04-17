@@ -36,16 +36,19 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <span className="slider" id="slider"></span>
-      <a href="#" name="nav-item" className="active">
+      <a href="#introduction-section" name="nav-item" className="active">
         Home
       </a>
-      <a href="#" name="nav-item">
-        Experience
+      <a href="#skills-section" name="nav-item">
+        Skills
       </a>
-      <a href="#" name="nav-item">
+      <a href="#projects-section" name="nav-item">
         Projects
       </a>
-      <a href="#" name="nav-item">
+      <a href="#experience-section" name="nav-item">
+        Experience
+      </a>
+      <a href="#contact-section" name="nav-item">
         Contact
       </a>
     </div>
