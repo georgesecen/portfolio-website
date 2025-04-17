@@ -18,7 +18,7 @@ const emailLink = "mailto:george.secen.work@gmail.com"
  */
 const IntroductionSection = () => {
   return (
-    <div id='introduction-section' className='introduction-section-container'>
+    <div id='introduction-section' className='introduction-section-container' name="section">
 
         {/* Intro text */}
         <section>
