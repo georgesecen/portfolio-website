@@ -14,13 +14,14 @@
 /* Skills title */
 .skills-section > h1{
     color: var(--grey700);
-    font-weight: 600;
     font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-weight);
 }
 /* Skills short description */
 .skills-section > p{
     color: var(--grey600);
     font-size: var(--section-subtitle-font-size);
+    font-weight: var(--section-subtitle-font-weight);
 }
 
 /* Container holds entire bar chart component */

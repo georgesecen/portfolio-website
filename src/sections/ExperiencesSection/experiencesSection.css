@@ -15,13 +15,7 @@
     color: var(--grey700);
     font-weight: 600;
     font-size: var(--section-title-font-size);
-}
-
-/* Section description */
-.experiences-section > p{
-    color: var(--grey600);
-    font-size: var(--section-subtitle-font-size);
-    text-align: center;
+    font-weight: var(--section-title-font-weight);
 }
 
 /* Container which holds all experience cards */

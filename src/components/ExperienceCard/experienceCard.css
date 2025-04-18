@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: sans-serif;
     border-bottom: 1px solid black;
     padding: 2em 0em 2em 0em;
     font-size: 1.1em;
+    color: var(--grey600);
 }
 
 /* Contains card title and short description/subtitle */
@@ -18,10 +18,26 @@
 
 /* Card title */
 .left-side-details > h2{
-    font-size: 2.5em;
+    font-size: 2em;
     position: relative;
     width: fit-content;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+
+    /* For title and icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+/* Optional icon next to title */
+.left-side-details > h2 > span > img{
+    width: 1.5em;
+}
+.left-side-details > h2 > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Title underline animation */
@@ -30,8 +46,8 @@
     position: absolute;
     width: 0%;
     height: 0.03em;
-    background-color: black;
-    bottom: 0px;
+    background-color: var(--grey500);
+    bottom: -4px;
     transition-property: width;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -43,6 +59,7 @@
 /* Container which holds date and experience type (Hybrid, onsite, remote) */
 .right-side-details{
     text-align: right;
+    color: var(--grey600);
 }
 
 /* Date */
