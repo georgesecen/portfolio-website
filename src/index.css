@@ -1,7 +1,28 @@
-/* CSS file contains all global styles */
+/* CSS file contains all global styles and variables */
+
+:root{
+    /* Different tones of grey used for texts and backgrounds */
+    --grey50: #f3f3f3;
+    --grey100: #e6e6e6;
+    --grey200: #ccc;
+    --grey300: #b3b3b3;
+    --grey400: #999;
+    --grey500: grey;
+    --grey600: #666;
+    --grey700: #4d4d4d;
+    --grey800: #333;
+    --grey900: #1a1a1a;
+    --grey950: #0d0d0d;
+}
+
 html{
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 
     /* For smooth scroll on navbar item click */
     scroll-behavior: smooth;
 }
+
+body{
+    background: var(--grey50);
+}
+
