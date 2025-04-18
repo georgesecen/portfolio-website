@@ -13,6 +13,16 @@
     --grey800: #333;
     --grey900: #1a1a1a;
     --grey950: #0d0d0d;
+
+    /* Section spacing is padding used for the top and bottom of each section to keep the sections seperated */
+    --section-spacing: 7em;
+
+    /* Section title font sizea to be used */
+    --section-title-font-size: 2.5em;
+    --section-subtitle-font-size: 1.1em;
+
+    /* Line seperator between sections to be used on section border bottoms */
+    --section-seperator: 1.5px solid var(--grey100);
 }
 
 html{

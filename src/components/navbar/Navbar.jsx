@@ -25,7 +25,7 @@ const Navbar = () => {
     window.onscroll = () => {
       sections.forEach((section) => {
         const top = window.scrollY
-        const offset = section.offsetTop
+        const offset = section.offsetTop - 1
         const height = section.offsetHeight
         const id = section.getAttribute("id")
 
