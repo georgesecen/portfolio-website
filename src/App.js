@@ -10,7 +10,7 @@ import {
   ExperienceCard, 
  } from "./components"
 
-import { SkillsSection, ExperiencesSection, IntroductionSection } from "./sections"
+import { SkillsSection, ExperiencesSection, IntroductionSection, ProjectsSection } from "./sections"
 
 import "./myersReset.css"
 
@@ -24,6 +24,7 @@ function App() {
       <Navbar />
       <IntroductionSection />
       <SkillsSection />
+      <ProjectsSection />
       <ExperiencesSection />
     </div>
   )
