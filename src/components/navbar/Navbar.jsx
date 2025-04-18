@@ -20,13 +20,6 @@ const Navbar = () => {
     slider.style.height = navItems[0].clientHeight + "px"
     slider.style.left = navItems[0].offsetLeft + "px"
 
-    // Updating the slider when nav links are clicked
-    navItems.forEach((item) => {
-      item.onclick = function () {
-        updateSelectedNavItem(slider, item)
-      }
-    })
-
     // https://www.youtube.com/watch?v=-uZ8MT4r2jY
     // Updating the slider accordingly when user scrolls to each section
     window.onscroll = () => {

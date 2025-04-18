@@ -1,0 +1,7 @@
+/* CSS file contains all global styles */
+html{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+
+    /* For smooth scroll on navbar item click */
+    scroll-behavior: smooth;
+}

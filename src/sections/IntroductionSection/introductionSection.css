@@ -1,19 +1,19 @@
 
 /* Container holds introduction text and socials/resume buttons */
 .introduction-section-container{
-    font-family: sans-serif;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     gap: 2em;
 }
 
 /* Hello text and im from Canada text */
 .introduction-section-container > section > h4{
     font-size: 1.5em;
+    font-weight: 600;
 }
 .introduction-section-container > section > h4 > span{
     /* Underlining the words Software Developer */
@@ -26,6 +26,7 @@
 .introduction-section-container > section > h1{
     font-size: 3em;
     margin: 0.3em 0 0.3em 0;
+    font-weight: 600;
 }
 
 /* Box shadow for all buttons */

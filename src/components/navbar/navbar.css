@@ -1,26 +1,29 @@
 
-/* For smooth scroll on navbar item click */
-html {
-    scroll-behavior: smooth;
-}
-
 .navbar {
     position: fixed;
     display: flex;
     width: fit-content;
-    background: hsla(0, 0%, 90%, .5);
     padding: 3px;
     border-radius: 30px;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
+
+    /* Frosted glass background */
+    background: hsla(0, 0%, 90%, .5);
+    backdrop-filter: blur(12.5px);
+
+    /* Center navbar horizontally */
+    margin: 1em auto; 
+    left: 0;
+    right: 0;
+    z-index: 5;
 }
 
 .navbar > a{
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, .4);
-    padding: 1.1em 1.6em 1.1em 1.6em;
+    padding: 1em 1.6em 1em 1.6em;
     border-radius: 30px;
     transition-property: color, background;
     transition-duration: 0.3s;
@@ -41,6 +44,7 @@ html {
     background-color: transparent;
 }
 
+/* White background which animates behind the current section in nav bar */
 .slider{
     z-index: 0;
     background-color: white;

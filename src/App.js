@@ -8,10 +8,9 @@ import {
   ProjectCard3,
   BarChart, 
   ExperienceCard, 
-  IntroductionSection
  } from "./components"
 
-import { SkillsSection, ExperiencesSection } from "./sections"
+import { SkillsSection, ExperiencesSection, IntroductionSection } from "./sections"
 
 import "./myersReset.css"
 
