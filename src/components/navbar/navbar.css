@@ -5,6 +5,7 @@
     width: fit-content;
     padding: 3px;
     border-radius: 30px;
+    user-select: none;
 
     /* Frosted glass background */
     background: hsla(0, 0%, 90%, .5);

@@ -1,18 +1,30 @@
 .skills-section{
     text-align: center;
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    user-select: none;
+    border-bottom: var(--section-seperator);
 }
 
 /* Skills title */
 .skills-section > h1{
-    font-size: 2.5em;
-    margin-bottom: 0.1em;
+    color: var(--grey700);
+    font-weight: 600;
+    font-size: var(--section-title-font-size);
 }
 /* Skills short description */
 .skills-section > p{
-    margin-bottom: 2em;
+    color: var(--grey600);
+    font-size: var(--section-subtitle-font-size);
 }
 
 /* Container holds entire bar chart component */
 .skills-section > div{
+    font-size: 16px;
+    padding-bottom: 0.1em;
 }

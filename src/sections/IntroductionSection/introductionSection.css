@@ -9,12 +9,14 @@
     min-height: 100vh;
     gap: 2em;
     color: var(--grey700);
+    border-bottom: var(--section-seperator)
 }
 
 /* Hello text and im from Canada text */
 .introduction-section-container > section > h4{
     font-size: 1.35em;
     font-weight: 300;
+    user-select: none;
 }
 .introduction-section-container > section > h4 > span{
     /* Underlining the words Software Developer */
@@ -28,6 +30,7 @@
     font-size: 3em;
     margin: 0.3em 0 0.5em 0;
     font-weight: 400;
+    user-select: none;
 }
 
 /* Box shadow for all buttons */
