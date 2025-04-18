@@ -19,3 +19,7 @@ export { default as iPhoneImage } from "./projects/moneyTrackerApp/iphone-screen
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"
+export { default as graduationCapIcon } from "./icons/graduation-cap.svg"
+export { default as laptopIcon } from "./icons/laptop.svg"
+export { default as codeIcon } from "./icons/code.svg"
+export { default as schoolIcon } from "./icons/school.svg"

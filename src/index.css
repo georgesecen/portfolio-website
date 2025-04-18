@@ -17,9 +17,11 @@
     /* Section spacing is padding used for the top and bottom of each section to keep the sections seperated */
     --section-spacing: 7em;
 
-    /* Section title font sizea to be used */
+    /* Section title font sizes to be used */
     --section-title-font-size: 2.5em;
+    --section-title-font-weight: 400;
     --section-subtitle-font-size: 1.1em;
+    --section-subtitle-font-weight: 300;
 
     /* Line seperator between sections to be used on section border bottoms */
     --section-seperator: 1.5px solid var(--grey100);

@@ -10,7 +10,7 @@ const SkillsSection = () => {
 
   return (
     <div id='skills-section' className='skills-section' name="section">
-        <h1>Skills</h1>
+        <h1>🛠️ Skills</h1>
         <p>A chart of languages that I am familar with and have used in prior projects. The higher the value the more skilled I am in that language.</p>
         <div>
           <BarChart series={[
