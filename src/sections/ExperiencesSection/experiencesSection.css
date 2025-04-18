@@ -3,12 +3,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3em;
+    user-select: none;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    border-bottom: var(--section-seperator);
 }
 
 /* Section title */
 .experiences-section > h1{
-    font-size: 2.5em;
-    font-family: sans-serif;
+    color: var(--grey700);
+    font-weight: 600;
+    font-size: var(--section-title-font-size);
+}
+
+/* Section description */
+.experiences-section > p{
+    color: var(--grey600);
+    font-size: var(--section-subtitle-font-size);
+    text-align: center;
 }
 
 /* Container which holds all experience cards */

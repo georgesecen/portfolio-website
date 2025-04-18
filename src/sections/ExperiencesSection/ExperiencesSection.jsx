@@ -10,6 +10,7 @@ const ExperiencesSection = () => {
   return (
     <div id='experience-section' className='experiences-section' name="section">
         <h1>Experience</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eos est explicabo consequuntur beatae. Blanditiis, ad.</p>
         <div>
             <ExperienceCard 
                 title="Computer Science Tutor" 
