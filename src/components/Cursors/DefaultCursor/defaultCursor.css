@@ -5,7 +5,7 @@
     position: fixed;
     width: fit-content;
     height: fit-content;
-    z-index: 2;
+    z-index: 10;
     pointer-events: none;
     transition-property: opacity;
     transition-duration: 0.4s;

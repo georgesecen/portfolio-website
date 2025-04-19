@@ -1,0 +1,28 @@
+
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    user-select: none;
+    border-bottom: var(--section-seperator);
+}
+
+/* Projects title */
+.projects-section > h1{
+    color: var(--grey700);
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-weight);
+}
+
+/* Container which holds all project cards */
+.projects-section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}

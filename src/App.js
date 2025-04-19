@@ -21,6 +21,8 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
+      <DefaultCursor />
+      <CustomCursor />
       <Navbar />
       <IntroductionSection />
       <SkillsSection />
