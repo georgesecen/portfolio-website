@@ -32,6 +32,14 @@ html{
 
     /* For smooth scroll on navbar item click */
     scroll-behavior: smooth;
+
+    /* Hide cursor so custom cursor can show */
+    cursor: none;
+}
+
+/* Hide cursor when on links */
+a{
+    cursor: none;
 }
 
 body{

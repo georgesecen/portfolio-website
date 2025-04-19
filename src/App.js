@@ -10,7 +10,7 @@ import {
   ExperienceCard, 
  } from "./components"
 
-import { SkillsSection, ExperiencesSection, IntroductionSection } from "./sections"
+import { SkillsSection, ExperiencesSection, IntroductionSection, ProjectsSection } from "./sections"
 
 import "./myersReset.css"
 
@@ -21,9 +21,12 @@ import { MoneyTrack, Test, iPhoneImage } from "./assets/images"
 function App() {
   return (
     <div>
+      <DefaultCursor />
+      <CustomCursor />
       <Navbar />
       <IntroductionSection />
       <SkillsSection />
+      <ProjectsSection />
       <ExperiencesSection />
     </div>
   )
