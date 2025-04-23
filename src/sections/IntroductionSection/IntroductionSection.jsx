@@ -29,11 +29,16 @@ const IntroductionSection = () => {
 
         {/* Container holds all social media buttons */}
         <div className='socials-buttons'>
-            <a>Linkden</a>
-            <a>Github</a>
-            <a>Email</a>
+            <a href={`${githubLink}`} rel="noreferrer" target="_blank">
+                <img src={githubLogo} />
+            </a>
+            <a href={`${linkedinLink}`} rel="noreferrer" target="_blank">
+                <img src={linkedinLogo} />
+            </a>
+            <a href={`${emailLink}`} rel="noreferrer" target="_blank">
+                <img src={emailLogo} />
+            </a>
         </div>
-
 
         {/* View CV button */}
         {/* https://uiverse.io/adamgiebl/soft-gecko-85 */}
