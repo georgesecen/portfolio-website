@@ -24,32 +24,33 @@ const IntroductionSection = () => {
         <section>
             <h4>&#128075; Hello, I'm</h4>
             <h1>George Secen</h1>
-            <h4>A <span>Software Developer</span> Based In Canada&#127809;</h4>
+            <h4>A <span>Software Developer</span> Based In  <span>Canada&#127809;</span></h4>
         </section>
 
-        {/* All socials links */}
-        <div>
-            {/* TODO: Make all buttons look better */}
-            <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
-                <p>Review CV</p>
-                <img src={arrowIcon} />
-            </a>
-
-            <a className='socials-button email-button' href={emailLink} rel="noreferrer" target="_blank">
-                <img src={emailLogo} />
-                <p>Email</p>
-            </a>
-
-            <a className='socials-button github-button' href={githubLink} rel="noreferrer" target="_blank">
+        {/* Container holds all social media buttons */}
+        <div className='socials-buttons'>
+            <a href={`${githubLink}`} rel="noreferrer" target="_blank">
                 <img src={githubLogo} />
-                <p>Github</p>
             </a>
-
-            <a className='socials-button linkedin-button' href={linkedinLink} rel="noreferrer" target="_blank">
+            <a href={`${linkedinLink}`} rel="noreferrer" target="_blank">
                 <img src={linkedinLogo} />
-                <p>Linkedin</p>
+            </a>
+            <a href={`${emailLink}`} rel="noreferrer" target="_blank">
+                <img src={emailLogo} />
             </a>
         </div>
+
+        {/* View CV button */}
+        {/* https://uiverse.io/adamgiebl/soft-gecko-85 */}
+        <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
+            <span className="text">View CV</span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+        </a>
+
+       
     </div>
   )
 }
