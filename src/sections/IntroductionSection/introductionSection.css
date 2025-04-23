@@ -9,7 +9,8 @@
     min-height: 100vh;
     gap: 2em;
     color: var(--grey700);
-    border-bottom: var(--section-seperator)
+    border-bottom: var(--section-seperator);
+    padding: 0 1em 0 1em;
 }
 
 /* Hello text and im from Canada text */
@@ -18,11 +19,23 @@
     font-weight: 300;
     user-select: none;
 }
-.introduction-section-container > section > h4 > span{
-    /* Underlining the words Software Developer */
+
+/* Im from canada text for when it wraps the lines are too close */
+.introduction-section-container > section > h4:nth-of-type(2){
+    line-height: 1.25em;
+}
+
+/* Underlining the words Software Developer */
+.introduction-section-container > section > h4 > span:nth-of-type(1){
     text-decoration: underline;
     text-decoration-thickness: 0.05em;
-    text-underline-offset: 0.1em;
+    text-underline-offset: 0.15em;
+}
+
+/* Canada with maple leaf emoji just making sure they cannot break apart as if the maple
+leaf is on a new line by itself it looks weird */
+.introduction-section-container > section > h4 > span:nth-of-type(2){
+    white-space: nowrap;
 }
 
 /* My name text */
@@ -35,7 +48,7 @@
 
 
 /* Container holds all socials buttons (Linkedin, Github and email) */
-.introduction-section-container > .socials-buttons{
+.socials-buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +84,7 @@
     border: none;
 
     position: absolute;
-    bottom: 7em;
+    bottom: 6em;
 }
 
 .cv-button > .text {
@@ -145,4 +158,16 @@
 
 .cv-button:hover > .blob {
     transform: scale(1.3);
+}
+
+
+/* So side nav socials buttons are responsive */
+@media screen and (max-width: 750px){
+
+    /* So socials buttons appear horizontally beneath the intro text */
+    .socials-buttons{
+        position: relative;
+        flex-direction: row;
+        left: 0;
+    }
 }

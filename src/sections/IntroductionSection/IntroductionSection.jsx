@@ -24,7 +24,7 @@ const IntroductionSection = () => {
         <section>
             <h4>&#128075; Hello, I'm</h4>
             <h1>George Secen</h1>
-            <h4>A <span>Software Developer</span> Based In Canada&#127809;</h4>
+            <h4>A <span>Software Developer</span> Based In  <span>Canada&#127809;</span></h4>
         </section>
 
         {/* Container holds all social media buttons */}
