@@ -34,6 +34,17 @@
 }
 
 
+/* Container holds all socials buttons (Linkedin, Github and email) */
+.introduction-section-container > .socials-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2em;
+}
+
+
 /* View CV button */
 /* https://uiverse.io/adamgiebl/soft-gecko-85 */
 .cv-button {
@@ -73,7 +84,7 @@
     border-radius: 5em;
     width: 5em;
     height: 3em;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, background 0.4s ease-in-out;
 }
 
 .cv-button > .blob:nth-child(2) {

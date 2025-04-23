@@ -27,6 +27,13 @@ const IntroductionSection = () => {
             <h4>A <span>Software Developer</span> Based In Canada&#127809;</h4>
         </section>
 
+        {/* Container holds all social media buttons */}
+        <div className='socials-buttons'>
+            <a>Linkden</a>
+            <a>Github</a>
+            <a>Email</a>
+        </div>
+
 
         {/* View CV button */}
         {/* https://uiverse.io/adamgiebl/soft-gecko-85 */}
