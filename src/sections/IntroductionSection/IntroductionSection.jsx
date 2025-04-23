@@ -27,29 +27,18 @@ const IntroductionSection = () => {
             <h4>A <span>Software Developer</span> Based In Canada&#127809;</h4>
         </section>
 
-        {/* All socials links */}
-        <div>
-            {/* TODO: Make all buttons look better */}
-            <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
-                <p>Review CV</p>
-                <img src={arrowIcon} />
-            </a>
 
-            <a className='socials-button email-button' href={emailLink} rel="noreferrer" target="_blank">
-                <img src={emailLogo} />
-                <p>Email</p>
-            </a>
+        {/* View CV button */}
+        {/* https://uiverse.io/adamgiebl/soft-gecko-85 */}
+        <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
+            <span className="text">View CV</span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+            <span className="blob"></span>
+        </a>
 
-            <a className='socials-button github-button' href={githubLink} rel="noreferrer" target="_blank">
-                <img src={githubLogo} />
-                <p>Github</p>
-            </a>
-
-            <a className='socials-button linkedin-button' href={linkedinLink} rel="noreferrer" target="_blank">
-                <img src={linkedinLogo} />
-                <p>Linkedin</p>
-            </a>
-        </div>
+       
     </div>
   )
 }

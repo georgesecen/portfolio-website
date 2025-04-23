@@ -33,87 +33,90 @@
     user-select: none;
 }
 
-/* Box shadow for all buttons */
-:root {
-    --button-box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.25);
+
+/* View CV button */
+/* https://uiverse.io/adamgiebl/soft-gecko-85 */
+.cv-button {
+    position: relative;
+    font-size: 16px;
+    border-radius: 40em;
+    width: 8em;
+    height: 3em;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+    border: none;
 }
 
-/* Container which holds all cv and socials buttons */
-.introduction-section-container > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75em;
+.cv-button > .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 3em;
+    border-radius: 40em;
+    border: none;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.473),
+        rgba(150, 150, 150, 0.25)
+    );
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    letter-spacing: 0.7px;
 }
 
-/* Container holds view cv text and arrow icon */
-.cv-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3em;
-    padding: 0.3em 0.8em 0.3em 0.8em;
-    background-color: white;
-    width: fit-content;
-    text-decoration: none;
-    white-space: nowrap;
-    color: black;
-    border-radius: 2em;
-    box-shadow: var(--button-box-shadow)
-}
-.cv-button > img{
-    width: 2.35em;
-    transform: rotateZ(-45deg);
-
-    /* For image rotate on hover animation */
-    transition: transform 0.25s ease-in-out;
-}
-.cv-button:hover > img{
-    transform: rotateZ(0deg);
+.cv-button > .blob {
+    position: absolute;
+    z-index: -1;
+    border-radius: 5em;
+    width: 5em;
+    height: 3em;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-/* Class used on all social media link buttons */
-.socials-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-    width: fit-content;
-    height: fit-content;
-    background-color: white;
-    border-radius: 3em;
-    color: black;
-    text-decoration: none;
-    box-shadow: var(--button-box-shadow);
-
-    /* For button pushe down effect */
-    transition: transform 0.25s ease-in-out;
-}
-.socials-button:hover{
-    transform: translateY(-0.3em);
+.cv-button > .blob:nth-child(2) {
+    left: 0em;
+    top: 0;
+    background: #ff930f;
 }
 
-/* Social media link buttons */
-.github-button{
-    color: black;
-    border: 1.5px solid black;
-    padding: 0.6em 0.85em 0.6em 0.85em;
+.cv-button > .blob:nth-child(3) {
+    left: 1.8em;
+    top: 0;
+    z-index: -1;
+    background: #bf0fff;
 }
-.github-button > img{
-    width: 1.5em;
+
+.cv-button > .blob:nth-child(4) {
+    left: 4em;
+    top: -1em;
+    background: #ff1b6b;
 }
-.linkedin-button{
-    border: 1.5px solid #0077B5;
-    padding: 0.375em 0.70em 0.375em 0.70em;
+
+.cv-button > .blob:nth-child(5) {
+    left: 4.3em;
+    top: 1.6em;
+    background: #0061ff;
 }
-.linkedin-button > img{
-    width: 2em;
+
+.cv-button:hover > .blob:nth-child(2) {
+    background: #0061ff;
 }
-.email-button{
-    border: 1.5px solid #c1253f;
-    padding: 0.5em 0.85em 0.5em 0.85em;
+
+.cv-button:hover > .blob:nth-child(3) {
+    background: #ff1b6b;
 }
-.email-button > img{
-    width: 1.75em;
+
+.cv-button:hover > .blob:nth-child(4) {
+    background: #bf0fff;
+}
+
+.cv-button:hover > .blob:nth-child(5) {
+    background: #ff930f;
+}
+
+.cv-button:hover > .blob {
+    transform: scale(1.3);
 }
