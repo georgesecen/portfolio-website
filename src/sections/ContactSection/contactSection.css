@@ -1,0 +1,48 @@
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    user-select: none;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    border-bottom: var(--section-seperator);
+}
+
+/* Section title */
+.contact-section > h1{
+    color: var(--grey700);
+    font-weight: 600;
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-weight);
+}
+
+/* Section sub title "lets shake hands" */
+.contact-section > p{
+    color: var(--grey600);
+    font-size: 1.2em;
+    font-weight: 400;
+    white-space: nowrap;
+}
+/* Greying out the shaking hands emoji */
+.contact-section > p > span{
+    filter: grayscale(100%);
+}
+
+/* george.secen.work@gmail.com text */
+.contact-section > a{
+    color: var(--grey600);
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    text-decoration-thickness: 2px;
+
+    /* For color change effect */
+    transition: color 0.25s ease-in-out;
+}
+.contact-section > a:hover{
+    color: var(--grey700)
+}
