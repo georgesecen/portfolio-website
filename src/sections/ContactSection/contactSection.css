@@ -1,48 +1,75 @@
 
 .contact-section{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 3em;
     user-select: none;
     padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
     border-bottom: var(--section-seperator);
+    padding-left: 2.5em;
+
+    background-color: var(--grey700);
+    color: var(--grey100);
 }
 
-/* Section title */
-.contact-section > h1{
-    color: var(--grey700);
-    font-weight: 600;
-    font-size: var(--section-title-font-size);
-    font-weight: var(--section-title-font-weight);
-}
 
 /* Section sub title "lets shake hands" */
-.contact-section > p{
-    color: var(--grey600);
-    font-size: 1.2em;
+.contact-section > h2{
+    font-size: var(--section-subtitle-font-size);
     font-weight: 400;
     white-space: nowrap;
-}
-/* Greying out the shaking hands emoji */
-.contact-section > p > span{
-    filter: grayscale(100%);
+    width: fit-content;
 }
 
 /* george.secen.work@gmail.com text */
 .contact-section > a{
-    color: var(--grey600);
+    all: unset;
     font-size: 3em;
     font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 0.5em;
-    text-decoration-thickness: 2px;
+    width: fit-content;
 
     /* For color change effect */
     transition: color 0.25s ease-in-out;
 }
 .contact-section > a:hover{
-    color: var(--grey700)
+    color: var(--grey300)
+}
+
+/* Interested in relationship text */
+.contact-section > p{
+    line-height: 1.3em;
+}
+/* Download cv button */
+.contact-section > p > a{
+    all: unset;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    white-space: nowrap;
+
+    /* For color change effect */
+    transition: color 0.25s ease-in-out;
+}
+.contact-section > p > a:hover{
+    color: var(--grey300)
+}
+
+/* Container holds socials buttons */
+.contact-section > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+/* Socials buttons */
+.contact-section > div > a{
+    all: unset;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+
+    /* For color change effect */
+    transition: color 0.25s ease-in-out;
+}
+.contact-section > div > a:hover{
+    color: var(--grey300)
 }

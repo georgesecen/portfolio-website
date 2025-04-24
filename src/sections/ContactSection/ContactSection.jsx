@@ -10,10 +10,16 @@ const emailLink = "mailto:george.secen.work@gmail.com"
 const ContactSection = () => {
   return (
     <div id='contact-section' className='contact-section' name="section">
-      <h1>&#128222; Contact</h1>
-      <p>Let's shake hands <span>&#129309;</span></p>
+      <h2>Let's shake hands <span>&#129309;</span></h2>
 
       <a href={`${emailLink}`} rel="noreferrer" target="_blank">george.secen.work@gmail.com</a>
+
+      <p>Are you interested in a long term relationship? <a href={`${curriculumVitae}`} download="George Secen CV">Download my CV</a></p>
+
+      <div>
+        <a href={`${githubLink}`} rel="noreferrer" target="_blank">Github</a>
+        <a href={`${linkedinLink}`} rel="noreferrer" target="_blank">Linkedin</a>
+      </div>
     </div>
   )
 }
