@@ -9,6 +9,7 @@
     padding-bottom: var(--section-spacing);
     border-bottom: var(--section-seperator);
     padding-left: 2.5em;
+    padding-right: 1em;
 
     background-color: var(--grey700);
     color: var(--grey100);
@@ -27,7 +28,7 @@
 .contact-section > a{
     all: unset;
     font-size: 3em;
-    font-weight: bold;
+    font-weight: 400;
     width: fit-content;
 
     /* For color change effect */
@@ -72,4 +73,12 @@
 }
 .contact-section > div > a:hover{
     color: var(--grey300)
+}
+
+/* Email text shrinks down in font size and is reponsive */
+@media screen and (max-width: 750px){
+
+    .contact-section > a{
+        font-size: 1.3em;
+    }
 }
