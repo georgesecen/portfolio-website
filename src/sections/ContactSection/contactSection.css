@@ -7,7 +7,7 @@
     user-select: none;
     padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
-    border-bottom: var(--section-seperator);
+    border-bottom: 1.5px solid var(--grey600);
     padding-left: 2.5em;
     padding-right: 1em;
 

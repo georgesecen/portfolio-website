@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    user-select: none;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+
+    background-color: var(--grey700);
+    color: var(--grey100);
+}

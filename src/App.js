@@ -15,7 +15,8 @@ import {
   ExperiencesSection,
   IntroductionSection,
   ProjectsSection,
-  ContactSection
+  ContactSection,
+  Footer
 } from "./sections"
 
 import "./myersReset.css"
@@ -35,6 +36,7 @@ function App() {
       <ProjectsSection />
       <ExperiencesSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }

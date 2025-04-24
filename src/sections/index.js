@@ -3,3 +3,4 @@ export { default as ExperiencesSection } from "./ExperiencesSection/ExperiencesS
 export { default as IntroductionSection } from "./IntroductionSection/IntroductionSection"
 export { default as ProjectsSection } from "./ProjectsSection/ProjectsSection"
 export { default as ContactSection } from "./ContactSection/ContactSection"
+export { default as Footer } from "./Footer/Footer"
