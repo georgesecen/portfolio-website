@@ -49,3 +49,11 @@
     /* Radius of the circular text */
     transform-origin: 0em 6.5em; 
 }
+
+/* So cursor is not used on smaller devices */
+@media screen and (max-width: 500px){
+
+    .custom-cursor{
+        display: none;
+    }
+}

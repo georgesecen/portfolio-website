@@ -2,6 +2,9 @@
 .mobile-navigation{
     position: fixed;
     z-index: 2;
+    
+    /* By default mobile navbar will not be shown */
+    display: none;
 }
 
 /* 3 lines mobile nav button */
@@ -64,24 +67,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2em;
     height: 100vh;
     width: 30em;
     max-width: 90vw;
+    border: 1px solid var(--grey200);
 
     /* Frosted glass background */
     background: hsla(0, 0%, 90%, .5);
     backdrop-filter: blur(12.5px);
 
     /* By default nav is hidden */
-    transform: translateX(-100%);
+    transform: translateX(-105%);
 
     /* For slide in/out effect */
     transition: transform 0.3s ease-in-out;
 }
 .menu > a{
     all: unset;
+    font-size: 3em;
+    color: var(--grey700);
+    margin-left: 1em;
 }
 .mobile-navigation.active > .menu{
     /* Display the menu */
     transform: translateX(0%);
+}
+
+/* Mobile navbar appears only on smaller devices */
+@media screen and (max-width: 500px){
+
+    .mobile-navigation{
+        display: block;
+    }
 }

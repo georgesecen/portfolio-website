@@ -21,3 +21,11 @@
     border-radius: 50%;
     background-color: black;
 }
+
+/* So cursor is not used on smaller devices */
+@media screen and (max-width: 500px){
+
+    .default-cursor{
+        display: none;
+    }
+}

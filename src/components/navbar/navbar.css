@@ -54,3 +54,11 @@
     transition-property: width, left;
     transition-duration: 0.3s;
 }
+
+/* So navbar disappears on smaller devices */
+@media screen and (max-width: 500px){
+
+    .navbar{
+        display: none;
+    }
+}

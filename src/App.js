@@ -31,7 +31,7 @@ function App() {
     <div>
       <DefaultCursor />
       <CustomCursor />
-      {/* <Navbar /> */}
+      <Navbar />
       <MobileNavbar />
       <IntroductionSection />
       <SkillsSection />
