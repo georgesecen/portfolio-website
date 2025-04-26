@@ -1,6 +1,7 @@
 import React from "react"
 import { 
   Navbar, 
+  MobileNavbar,
   DefaultCursor, 
   CustomCursor, 
   ProjectCard, 
@@ -30,7 +31,8 @@ function App() {
     <div>
       <DefaultCursor />
       <CustomCursor />
-      <Navbar />
+      {/* <Navbar /> */}
+      <MobileNavbar />
       <IntroductionSection />
       <SkillsSection />
       <ProjectsSection />
