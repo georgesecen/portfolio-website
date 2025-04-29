@@ -25,6 +25,9 @@
 
     /* Line seperator between sections to be used on section border bottoms */
     --section-seperator: 1.5px solid var(--grey100);
+
+    /* Padding which each section should have to its left and right */
+    --section-side-padding: 60px;
 }
 
 html{
@@ -44,5 +47,13 @@ a{
 
 body{
     background: var(--grey50);
+}
+
+
+/* Change section side padding on smaller devices to give more room for content */
+@media screen and (max-width: 750px) {
+    :root{
+        --section-side-padding: 25px;
+    }
 }
 

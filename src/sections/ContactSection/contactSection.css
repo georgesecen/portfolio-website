@@ -8,8 +8,9 @@
     padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
     border-bottom: 1.5px solid var(--grey600);
-    padding-left: 2.5em;
-    padding-right: 1em;
+
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
 
     background-color: var(--grey700);
     color: var(--grey100);

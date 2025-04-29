@@ -1,5 +1,4 @@
 .experiences-section{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +7,9 @@
     padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
     border-bottom: var(--section-seperator);
+
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
 }
 
 /* Section title */
@@ -20,5 +22,5 @@
 
 /* Container which holds all experience cards */
 .experiences-section > div{
-    width: 90%;
+    width: 100%;
 }

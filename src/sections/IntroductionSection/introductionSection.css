@@ -10,7 +10,9 @@
     gap: 2em;
     color: var(--grey700);
     border-bottom: var(--section-seperator);
-    padding: 0 1em 0 1em;
+    
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
 }
 
 /* Hello text and im from Canada text */

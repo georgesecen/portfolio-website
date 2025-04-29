@@ -8,6 +8,9 @@
     padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
 
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
+
     background-color: var(--grey700);
     color: var(--grey100);
 }
