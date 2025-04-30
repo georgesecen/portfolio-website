@@ -43,7 +43,7 @@ const IntroductionSection = () => {
         {/* View CV button */}
         {/* https://uiverse.io/adamgiebl/soft-gecko-85 */}
         <a className='cv-button' href={`${curriculumVitae}`} rel="noreferrer" target="_blank">
-            <span className="text">View CV</span>
+            <span className="text">View Resume</span>
             <span className="blob"></span>
             <span className="blob"></span>
             <span className="blob"></span>

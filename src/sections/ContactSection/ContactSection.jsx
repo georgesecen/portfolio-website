@@ -14,7 +14,7 @@ const ContactSection = () => {
 
       <a href={`${emailLink}`} rel="noreferrer" target="_blank">george.secen.work@gmail.com</a>
 
-      <p>Are you interested in a long term relationship? <a href={`${curriculumVitae}`} download="George Secen CV">Download my CV</a></p>
+      <p>Are you interested in a long term relationship? <a href={`${curriculumVitae}`} download="George Secen Resume">Download my Resume</a></p>
 
       <div>
         <a href={`${githubLink}`} rel="noreferrer" target="_blank">Github</a>
