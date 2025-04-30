@@ -37,26 +37,18 @@
     align-items: center;
 }
 
-/* Image cycler div actually contains images displayed to the user via background-image */
+/* Container holds image and is able to put border around image even when image may be
+distorted by max height */
 .image-container3 > div{
-    background-image: url();
-    background-size: cover;
     width: fit-content;
     height: fit-content;
-    border: 1px solid var(--grey100);
     border-radius: 17px;
-
-    /* For image swapping effect, and for image pop out effect */
-    transition: background-image 1s ease-in-out;
+    overflow: hidden;
 }
-
-/* Image is just used to fill up the size so parent can use background-image to actually display
-the image to the user. Hence opacity: 0 */
 .image-container3 > div > img{
     width: 100%;
     max-height: 20em;
     object-fit: contain;
-    opacity: 0;
 }
 
 
