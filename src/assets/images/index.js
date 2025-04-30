@@ -13,6 +13,12 @@ export { default as htmlLogo } from "./logos/html5-logo.svg"
 export { default as cssLogo } from "./logos/css3-logo.svg"
 
 // Project images
+
+// renova-ecommerce images
+export { default as renovaHome } from "./projects/renova-ecommerce/home.png"
+export { default as renovaChart } from "./projects/renova-ecommerce/bar-chart.png"
+
+
 export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"
 export { default as Test } from "./projects/moneyTrackerApp/test.jpg"
 export { default as iPhoneImage } from "./projects/moneyTrackerApp/iphone-screen.jpeg"
