@@ -1,6 +1,12 @@
 import { React, useEffect } from "react"
 import "./defaultCursor.css"
 
+
+/**
+ * The default cursor is a custom cursor used on larger devices which turns your mouse into a black
+ * circle. Especially looks good when used with the CustomCursor component on project cards.
+ * @returns {JSX.Element} DefaultCursor React component.
+ */
 const DefaultCursor = () => {
   useEffect(() => {
     document.addEventListener("mousemove", function (e) {

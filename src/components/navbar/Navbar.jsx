@@ -1,6 +1,11 @@
 import { React, useEffect, useRef } from "react"
 import "./navbar.css"
 
+
+/**
+ * Navbar is displayed on larger devices and allows the user to easily navigate through the website.
+ * @returns {JSX.Element} Navbar React component.
+ */
 const Navbar = () => {
   // Keep track of currently active nav bar item
   const active = useRef()

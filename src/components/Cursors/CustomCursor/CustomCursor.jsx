@@ -2,6 +2,12 @@ import { React, useEffect } from "react"
 import "./customCursor.css"
 import { githubLogo } from "../../../assets/images"
 
+
+/**
+ * Custom cursor is a cursor which is used only when hovering over project cards. The cursor displays
+ * the Github logo and spins in a circle to give a cool effect.
+ * @returns {JSX.Element} CustomCursor React component.
+ */
 const CustomCursor = () => {
   useEffect(() => {
     const text = document.querySelector(".custom-cursor > p")
