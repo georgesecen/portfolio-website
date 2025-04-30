@@ -17,6 +17,9 @@
     align-items: center;
     gap: 0.4em;
     z-index: 2;
+
+    left: 1.5em;
+    top: 1.5em;
     
     width: 3em;
     height: 3em;

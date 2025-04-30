@@ -9,6 +9,9 @@
     padding-bottom: var(--section-spacing);
     user-select: none;
     border-bottom: var(--section-seperator);
+
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
 }
 
 /* Skills title */
@@ -22,6 +25,7 @@
     color: var(--grey600);
     font-size: var(--section-subtitle-font-size);
     font-weight: var(--section-subtitle-font-weight);
+    line-height: 1.2em;
 }
 
 /* Container holds entire bar chart component */

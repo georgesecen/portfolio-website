@@ -9,6 +9,9 @@
     padding-bottom: var(--section-spacing);
     user-select: none;
     border-bottom: var(--section-seperator);
+
+    padding-left: var(--section-side-padding);
+    padding-right: var(--section-side-padding);
 }
 
 /* Projects title */

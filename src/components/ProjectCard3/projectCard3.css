@@ -10,12 +10,11 @@
     flex-direction: column;
     gap: 1.5em;
 
-    width: fit-content;
     background-color: rgb(250, 250, 250);
     padding: 1.25em 1.75em 1.25em 1.75em;
     border-radius: 1em;
     width: 90%;
-    max-width: 22em;
+    max-width: 35em;
     border: 1px solid var(--grey200);
 
     /* So padding is included in width */
@@ -44,11 +43,11 @@
     background-size: cover;
     width: fit-content;
     height: fit-content;
-    /* box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2); */
-    border-radius: 15px;
+    border: 1px solid var(--grey100);
+    border-radius: 17px;
 
     /* For image swapping effect, and for image pop out effect */
-    transition: background-image 1s, box-shadow 0.20s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 
 /* Image is just used to fill up the size so parent can use background-image to actually display
@@ -73,7 +72,7 @@ the image to the user. Hence opacity: 0 */
     font-size: var(--section-subtitle-font-size);
     font-weight: var(--section-subtitle-font-weight);
     color: var(--grey600);
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 
 /* Container which holds all coding language icons for langauges used in project */

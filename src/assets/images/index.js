@@ -13,9 +13,26 @@ export { default as htmlLogo } from "./logos/html5-logo.svg"
 export { default as cssLogo } from "./logos/css3-logo.svg"
 
 // Project images
-export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"
-export { default as Test } from "./projects/moneyTrackerApp/test.jpg"
-export { default as iPhoneImage } from "./projects/moneyTrackerApp/iphone-screen.jpeg"
+
+// renova-ecommerce images
+export { default as renovaHome } from "./projects/renova-ecommerce/home.png"
+export { default as renovaChart } from "./projects/renova-ecommerce/bar-chart.png"
+
+// money-tracker-app images
+export { default as moneyLogin } from "./projects/money-tracker-app/login.png"
+export { default as moneyStatistics } from "./projects/money-tracker-app/statistics.png"
+
+// the-easiest-game images
+export { default as easiestGameHome } from "./projects/the-easiest-game/home.png"
+export { default as easiestGameLevel1 } from "./projects/the-easiest-game/level1.png"
+export { default as easiestGameLevel2 } from "./projects/the-easiest-game/level2.png"
+
+// portfolio-website images
+export { default as portfolioIntro } from "./projects/portfolio-website/introduction.png"
+export { default as portfolioSkills } from "./projects/portfolio-website/skills.png"
+export { default as portfolioProjects } from "./projects/portfolio-website/projects.png"
+
+
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"
