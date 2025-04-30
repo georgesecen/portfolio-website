@@ -18,10 +18,10 @@ export { default as cssLogo } from "./logos/css3-logo.svg"
 export { default as renovaHome } from "./projects/renova-ecommerce/home.png"
 export { default as renovaChart } from "./projects/renova-ecommerce/bar-chart.png"
 
+// money-tracker-app images
+export { default as moneyLogin } from "./projects/money-tracker-app/login.png"
+export { default as moneyStatistics } from "./projects/money-tracker-app/statistics.png"
 
-export { default as MoneyTrack } from "./projects/moneyTrackerApp/login.png"
-export { default as Test } from "./projects/moneyTrackerApp/test.jpg"
-export { default as iPhoneImage } from "./projects/moneyTrackerApp/iphone-screen.jpeg"
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"

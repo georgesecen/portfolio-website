@@ -2,10 +2,12 @@ import React from 'react'
 import "./projectsSection.css"
 import { ProjectCard3 } from '../../components'
 
-// renova-ecommerce images
+// Project images
 import { 
-    renovaHome,
-    renovaChart
+  renovaHome,
+  renovaChart,
+  moneyLogin,
+  moneyStatistics  
  } from "./../../assets/images"
 
 const ProjectsSection = () => {
@@ -19,6 +21,14 @@ const ProjectsSection = () => {
                 images={[renovaHome, renovaChart]}
                 languages={["react", "javascript", "mysql", "html", "css"]}
                 githubLink="https://github.com/georgesecen/renova-ecommerce"
+                >   
+            </ProjectCard3>
+            <ProjectCard3
+                title="Money Tracker App"
+                description="A finance dashboard which allows users to track their expenses and earnings also giving valuable insight regarding spending habits and trends."
+                images={[moneyLogin, moneyStatistics]}
+                languages={["java", "mysql", "html", "css"]}
+                githubLink="https://github.com/georgesecen/money-tracker-app"
                 >   
             </ProjectCard3>
         </div>
