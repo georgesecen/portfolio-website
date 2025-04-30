@@ -27,6 +27,12 @@ export { default as easiestGameHome } from "./projects/the-easiest-game/home.png
 export { default as easiestGameLevel1 } from "./projects/the-easiest-game/level1.png"
 export { default as easiestGameLevel2 } from "./projects/the-easiest-game/level2.png"
 
+// portfolio-website images
+export { default as portfolioIntro } from "./projects/portfolio-website/introduction.png"
+export { default as portfolioSkills } from "./projects/portfolio-website/skills.png"
+export { default as portfolioProjects } from "./projects/portfolio-website/projects.png"
+
+
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"
