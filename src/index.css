@@ -49,6 +49,11 @@ body{
     background: var(--grey50);
 }
 
+/* Dont allow screen to scroll when mobile nav bar is active */
+body.active-mobile-nav{
+    overflow: hidden;
+}
+
 
 /* Change section side padding on smaller devices to give more room for content */
 @media screen and (max-width: 750px) {
