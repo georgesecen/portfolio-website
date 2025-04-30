@@ -67,6 +67,7 @@
 
 /* Container which holds navigation links */
 .menu{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;

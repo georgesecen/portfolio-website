@@ -11,6 +11,7 @@ export { default as linkedinLogo } from "./logos/linkedin-logo.svg"
 export { default as emailLogo } from "./logos/email-logo.svg"
 export { default as htmlLogo } from "./logos/html5-logo.svg"
 export { default as cssLogo } from "./logos/css3-logo.svg"
+export { default as csharpLogo } from "./logos/csharp-logo.svg"
 
 // Project images
 

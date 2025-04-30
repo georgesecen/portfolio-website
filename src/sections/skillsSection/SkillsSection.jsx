@@ -22,6 +22,7 @@ const SkillsSection = () => {
               {value: 90, label: <CodeLanguageIcon language="react" />, color: "green"},
               {value: 90, label: <CodeLanguageIcon language="javascript" />, color: "yellow"},
               {value: 85, label: <CodeLanguageIcon language="java" />, color: "brown"},
+              {value: 70, label: <CodeLanguageIcon language="csharp" />, color: "green"},
               {value: 85, label: <CodeLanguageIcon language="mysql" />, color: "pink"},
           ]} />
         </div>
