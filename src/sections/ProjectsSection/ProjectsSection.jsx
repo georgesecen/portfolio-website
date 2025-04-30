@@ -7,7 +7,10 @@ import {
   renovaHome,
   renovaChart,
   moneyLogin,
-  moneyStatistics  
+  moneyStatistics,
+  easiestGameHome,
+  easiestGameLevel1,
+  easiestGameLevel2  
  } from "./../../assets/images"
 
 const ProjectsSection = () => {
@@ -29,6 +32,14 @@ const ProjectsSection = () => {
                 images={[moneyLogin, moneyStatistics]}
                 languages={["java", "mysql", "html", "css"]}
                 githubLink="https://github.com/georgesecen/money-tracker-app"
+                >   
+            </ProjectCard3>
+            <ProjectCard3
+                title="The Easiest Game"
+                description="A game inspired by The 'Hardest Game' that provides the main functions you'd expect from a game such as leaderboards, shop to spend in game currrency, and multiple game levels."
+                images={[easiestGameHome, easiestGameLevel2, easiestGameLevel1]}
+                languages={["java", "html", "css"]}
+                githubLink="https://github.com/georgesecen/the-easiest-game"
                 >   
             </ProjectCard3>
         </div>

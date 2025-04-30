@@ -22,6 +22,11 @@ export { default as renovaChart } from "./projects/renova-ecommerce/bar-chart.pn
 export { default as moneyLogin } from "./projects/money-tracker-app/login.png"
 export { default as moneyStatistics } from "./projects/money-tracker-app/statistics.png"
 
+// the-easiest-game images
+export { default as easiestGameHome } from "./projects/the-easiest-game/home.png"
+export { default as easiestGameLevel1 } from "./projects/the-easiest-game/level1.png"
+export { default as easiestGameLevel2 } from "./projects/the-easiest-game/level2.png"
+
 
 // Icons
 export { default as arrowIcon } from "./icons/arrow.svg"
