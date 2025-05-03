@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.12a833f7.css",
+    "main.js": "/portfolio-website/static/js/main.1c6cfe5a.js",
+    "static/js/453.aac68abc.chunk.js": "/portfolio-website/static/js/453.aac68abc.chunk.js",
+    "static/media/home.png": "/portfolio-website/static/media/home.196702e565b1cef57abd.png",
+    "static/media/statistics.png": "/portfolio-website/static/media/statistics.cc33091301bc591dfe2a.png",
+    "static/media/projects.png": "/portfolio-website/static/media/projects.93f778a7abadbd8ce0ad.png",
+    "static/media/skills.png": "/portfolio-website/static/media/skills.da61961c97fd9077e25d.png",
+    "static/media/cv.pdf": "/portfolio-website/static/media/cv.494e334e540e51af29b2.pdf",
+    "static/media/login.png": "/portfolio-website/static/media/login.f292a4d9fb38d83b3376.png",
+    "static/media/level2.png": "/portfolio-website/static/media/level2.af9aefbb9aced66ae4cc.png",
+    "static/media/bar-chart.png": "/portfolio-website/static/media/bar-chart.36c704d174c34c247226.png",
+    "static/media/introduction.png": "/portfolio-website/static/media/introduction.ec46d9bcbe9ed723dbcb.png",
+    "static/media/level1.png": "/portfolio-website/static/media/level1.db1dc6919a66628b5fb1.png",
+    "static/media/mysql-logo.svg": "/portfolio-website/static/media/mysql-logo.a9a13081a50faa8b9ae88c6cc225bd63.svg",
+    "static/media/react-logo.svg": "/portfolio-website/static/media/react-logo.22a05374f4eefdd120b71df3f98d68a1.svg",
+    "static/media/python-logo.svg": "/portfolio-website/static/media/python-logo.584d8e8274929c83b3afe4d258e31753.svg",
+    "static/media/github-logo.svg": "/portfolio-website/static/media/github-logo.76bdba6c04b60cae63dbe44f626f780b.svg",
+    "static/media/java-logo.svg": "/portfolio-website/static/media/java-logo.ea37baa6a1d1a1d45345798657d7d092.svg",
+    "static/media/laptop.svg": "/portfolio-website/static/media/laptop.0466ed3a3f599b1325b6dfbfbed1a72d.svg",
+    "static/media/csharp-logo.svg": "/portfolio-website/static/media/csharp-logo.35b4e76643798d289e34ce46d95f2409.svg",
+    "static/media/school.svg": "/portfolio-website/static/media/school.d532c85e2856a0dd422b93290f932d14.svg",
+    "static/media/typescript-logo.svg": "/portfolio-website/static/media/typescript-logo.db8ea18105df83bf21e73446e69621a1.svg",
+    "static/media/graduation-cap.svg": "/portfolio-website/static/media/graduation-cap.5e04d51ea743b591a7fc333ebfa2476e.svg",
+    "static/media/code.svg": "/portfolio-website/static/media/code.22ee20c5b13095088e8b34bd726f17c6.svg",
+    "static/media/email-logo.svg": "/portfolio-website/static/media/email-logo.9e8362b3d288d70ec6d380d773eb90ee.svg",
+    "index.html": "/portfolio-website/index.html",
+    "static/media/linkedin-logo.svg": "/portfolio-website/static/media/linkedin-logo.4ee2bdbd152ffd9970e25e7f775f87dc.svg",
+    "static/media/arrow.svg": "/portfolio-website/static/media/arrow.77475a3d9356d3a2651b86fe68b29ad5.svg",
+    "static/media/javascript-logo.svg": "/portfolio-website/static/media/javascript-logo.c2d463fde72a01350f2e8cdd7797b7ba.svg",
+    "static/media/angular-logo.svg": "/portfolio-website/static/media/angular-logo.fc6bcffec0a8ea4467602a6dbf6c0030.svg",
+    "static/media/css3-logo.svg": "/portfolio-website/static/media/css3-logo.60e23942f41d4dc73de0d271b4453605.svg",
+    "static/media/html5-logo.svg": "/portfolio-website/static/media/html5-logo.bfc29cc664956a7748f9ee78fa82ec7b.svg",
+    "main.12a833f7.css.map": "/portfolio-website/static/css/main.12a833f7.css.map",
+    "main.1c6cfe5a.js.map": "/portfolio-website/static/js/main.1c6cfe5a.js.map",
+    "453.aac68abc.chunk.js.map": "/portfolio-website/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12a833f7.css",
+    "static/js/main.1c6cfe5a.js"
+  ]
+}
