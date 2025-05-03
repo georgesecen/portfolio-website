@@ -1,0 +1,64 @@
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 30px;
+    user-select: none;
+
+    /* Frosted glass background */
+    background: hsla(0, 0%, 90%, .5);
+    backdrop-filter: blur(12.5px);
+
+    /* Center navbar horizontally */
+    margin: 1em auto; 
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.navbar > a{
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+    padding: 1em 1.6em 1em 1.6em;
+    border-radius: 30px;
+    transition-property: color, background;
+    transition-duration: 0.3s;
+    z-index: 1;
+}
+
+.navbar > a:hover{
+    color: black;
+    background: rgba(0, 0, 0, .025);
+}
+
+.navbar > .active{
+    color: black;
+}
+
+/* So when hovering over active item it stays white background color does not change */
+.navbar > .active:hover{
+    background-color: transparent;
+}
+
+/* White background which animates behind the current section in nav bar */
+.slider{
+    z-index: 0;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    transition-property: width, left;
+    transition-duration: 0.3s;
+}
+
+/* So navbar disappears on smaller devices */
+@media screen and (max-width: 500px){
+
+    .navbar{
+        display: none;
+    }
+}

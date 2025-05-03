@@ -1,12 +1,14 @@
 
 /* Container holds introduction text and socials/resume buttons */
 .introduction-section-container{
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 35em;
     gap: 2em;
     color: var(--grey700);
     border-bottom: var(--section-seperator);
@@ -75,7 +77,6 @@ leaf is on a new line by itself it looks weird */
 /* View CV button */
 /* https://uiverse.io/adamgiebl/soft-gecko-85 */
 .cv-button {
-    position: relative;
     font-size: 16px;
     border-radius: 40em;
     width: 8em;
