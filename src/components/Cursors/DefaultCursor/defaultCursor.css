@@ -23,7 +23,7 @@
 }
 
 /* So cursor is not used on smaller devices */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1050px){
 
     .default-cursor{
         display: none;
